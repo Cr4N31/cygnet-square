@@ -9,7 +9,7 @@ function Layout(){
     return(
         <BrowserRouter>
             <Header/>
-            <main className="bg-[#E0F2F1]">
+            <main className="bg-base">
                 <Routes>
                     <Route path="/" element={<Home/>}/>
                     <Route path="/about" element={<AboutPage/>}/>

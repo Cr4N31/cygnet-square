@@ -21,7 +21,7 @@ const pillars = [
 
 function About() {
   return (
-    <section className="bg-white px-12 py-16 grid md:grid-cols-2 grid-cols-1 gap-12 items-center">
+    <section className="bg-[#084059] px-12 py-16 grid md:grid-cols-2 grid-cols-1 gap-12 items-center">
 
       {/* Left — copy */}
       <div>
@@ -29,19 +29,19 @@ function About() {
           Who we are
         </span>
 
-        <h2 className="text-4xl font-medium text-[#085041] leading-tight tracking-tight mt-4 mb-5">
+        <h2 className="text-4xl font-medium text-[#20B2AA] leading-tight tracking-tight mt-4 mb-5">
           Inclusive by design,{' '}
-          <span className="text-[#A07820]">not by chance.</span>
+          <span className="text-[#D4AF37]">not by chance.</span>
         </h2>
 
-        <p className="text-sm text-gray-700 leading-relaxed mb-3">
+        <p className="text-sm text-white/70 leading-relaxed mb-3">
           Lorem ipsum dolor sit amet,{' '}
           <strong>consectetur adipiscing elit, sed do eiusmod</strong> tempor
           incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
           commodo consequat.
         </p>
-        <p className="text-sm text-gray-500 leading-relaxed mb-7">
+        <p className="text-sm text-white/70 leading-relaxed mb-7">
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
           dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -51,14 +51,14 @@ function About() {
           {pillars.map(({ icon: Icon, title, body }) => (
             <div
               key={title}
-              className="bg-gray-50 border border-[#0F6E56]/10 rounded-xl p-4 flex gap-4 items-start"
+              className="bg-[#20B2AA]/30 border border-[#0F6E56]/10 rounded-xl p-4 flex gap-4 items-start"
             >
-              <div className="bg-[#E0F2F1] rounded-lg p-2 flex-shrink-0">
+              <div className="bg-[#20B2AA] rounded-lg p-2 flex-shrink-0">
                 <Icon className="w-5 h-5 text-[#085041]" />
               </div>
               <div>
-                <p className="text-sm font-semibold text-[#085041] mb-1">{title}</p>
-                <p className="text-xs text-gray-500 leading-relaxed">{body}</p>
+                <p className="text-sm font-semibold text-[#D4AF37] mb-1">{title}</p>
+                <p className="text-xs text-white/70 leading-relaxed">{body}</p>
               </div>
             </div>
           ))}
@@ -66,7 +66,7 @@ function About() {
 
         <a
           href="#"
-          className="inline-flex items-center gap-2 bg-[#085041] hover:bg-[#085041]/20 transition-all duration-250 text-white text-sm font-medium px-6 py-3 rounded-lg"
+          className="inline-flex items-center gap-2 bg-[#20B2AA]/30 hover:bg-[#085041]/20 transition-all duration-250 text-white text-sm font-medium px-6 py-3 rounded-lg"
         >
           Learn more about us <ArrowRight className="w-4 h-4" />
         </a>
