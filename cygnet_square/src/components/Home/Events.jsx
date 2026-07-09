@@ -39,9 +39,8 @@ function Events() {
             <span className="text-gold">capacity-building events</span>
           </h2>
             <p className="text-sm text-white/60 leading-relaxed">
-            Join our workshops, networking mixers, and panels — designed to equip
-            women from underserved communities with real tools for social and
-            economic growth.
+               We create opportunities for women to build meaningful relationships through mentorship programs, peer support circles, networking events, and
+               community meetups that foster trust, collaboration, and personal growth.
             </p>
         </div>
       </div>

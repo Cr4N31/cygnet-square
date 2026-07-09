@@ -1,4 +1,4 @@
-import right_img from '/assets/imgs/img3.jpg'
+import right_img from '/assets/imgs/img3.webp'
 function Features() {
   const stats = [
     { icon: 'ti-users', label: 'Participants', value: '500+' },
@@ -8,12 +8,12 @@ function Features() {
   ]
 
   return (
-    <section className="bg-base rounded-t-xl p-10 grid md:grid-cols-2 grid-cols-1 gap-10 items-center" data-aos="fade-up">
+    <section className="bg-base rounded-t-xl p-10 grid md:grid-cols-2 grid-cols-1 gap-10 items-center">
 
       {/* Left — image + mini chart */}
       <div className="rounded-xl overflow-hidden bg-base min-h-[360px] relative flex flex-col justify-end">
         <picture>
-          <source type="image/jpg" srcSet="/assets/imgs/img3.jpg" />
+          <source type="image/webp" srcSet="/assets/imgs/img3.webp" />
           <img
             src={right_img}
             alt="Cygnet Square community members"
@@ -44,7 +44,7 @@ function Features() {
       </div>
 
       {/* Right — copy + stats */}
-      <div>
+      <div  data-aos="fade-up">
         <span className="text-[11px] tracking-widest uppercase text-gold font-medium border border-gold px-3 py-1 rounded-full">
           Community impact
         </span>
@@ -54,9 +54,8 @@ function Features() {
         </h2>
 
         <p className="text-sm text-white/60 leading-relaxed mb-6">
-          We bring together newcomer women, seniors, BIPOC communities, and
-          low-income families — giving them the tools, networks, and knowledge
-          to thrive socially and economically.
+          By combining a supportive, community-driven approach with modern tools, we empower women to build independent, safe and financially secure lives
+          while fostering meaningful connections that promote long-term economic stability.
         </p>
 
         <div className="grid grid-cols-2 gap-2.5">

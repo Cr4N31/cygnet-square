@@ -1,21 +1,21 @@
-import right_img from '../../../public/assets/imgs/img1.jpg'
+import right_img from '/assets/imgs/img1.webp'
 import { Globe, Users, TrendingUp, ArrowRight, Heart } from 'lucide-react'
 
 const pillars = [
   {
     icon: Globe,
     title: 'Networking & Connection.',
-    body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam quis nostrud exercitation ullamco.',
+    body: 'We create opportunities for women to build meaningful relationships through mentorship programs, peer support circles, and community meetups that foster trust, collaboration, and personal growth.',
   },
   {
     icon: Users,
     title: 'Capacity Building.',
-    body: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur sint.',
+    body: 'We deliver practical, hands-on training in digital literacy, career development, financial management, entrepreneurship, leadership, and other essential life and workplace skills.',
   },
   {
     icon: TrendingUp,
     title: 'Economic Empowerment.',
-    body: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    body: 'We provide members with timely access to local opportunities, job postings, educational resources, and funding opportunities that promote long-term economic stability.',
   },
 ]
 
@@ -35,16 +35,13 @@ function About() {
         </h2>
 
         <p className="text-sm text-white/70 leading-relaxed mb-3">
-          Lorem ipsum dolor sit amet,{' '}
-          <strong>consectetur adipiscing elit, sed do eiusmod</strong> tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat.
+          Cygnet Square is an {' '}
+          <strong>inclusive, resourceful, and resilient </strong> organization built to bring WOMEN together,
         </p>
         <p className="text-sm text-white/70 leading-relaxed mb-7">
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          We create opportunities for women to connect, grow, and thrive through inclusive networking programs, 
+          hands-on skills development workshops, and access to essential resources. Rooted in community and driven by purpose, 
+          we equip women with the tools, relationships, and knowledge they need to build independent and financially secure lives. Because when women rise together, entire communities are transformed
         </p>
 
         <div className="flex flex-col gap-3 mb-8">
@@ -65,7 +62,7 @@ function About() {
         </div>
 
         <a
-          href="#"
+          href="/about"
           className="inline-flex items-center gap-2 bg-[#20B2AA]/30 hover:bg-[#085041]/20 transition-all duration-250 text-white text-sm font-medium px-6 py-3 rounded-lg"
         >
           Learn more about us <ArrowRight className="w-4 h-4" />

@@ -1,23 +1,23 @@
 import { User } from 'lucide-react'
-import right_img from '../../../public/assets/imgs/img2.jpg'
+import right_img from '/assets/imgs/img2.webp'
 
 const pillars = [
   {
     num: '01',
     title: 'Financial & Digital Literacy',
-    body: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore dolore.',
+    body: 'We equip women with practical financial management and digital skills through hands-on workshops, helping them build confidence, improve employability, and achieve greater economic independence.',
   },
   {
     num: '02',
     title: 'Social Participation & Diversity',
-    body: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+    body: 'We foster an inclusive community where women from diverse backgrounds can connect, collaborate, and grow through mentorship, networking events, and supportive peer relationships.',
   },
   {
     num: '03',
     title: 'Access & Mobility Support',
-    body: 'Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim laborum.',
+    body: 'We connect women with valuable opportunities, community resources, educational programs, and essential services that remove barriers and support personal and professional growth.',
   },
-]
+];
 
 function Support() {
   return (
@@ -37,9 +37,7 @@ function Support() {
         <div className="w-10 h-px bg-gold my-5" />
 
         <p className="text-sm text-white/60 leading-relaxed mb-10">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim
-          veniam.
+          We turn our mission into meaningful impact by focusing on three key areas of practical, community-driven support.
         </p>
 
         <div className="flex flex-col">
@@ -82,8 +80,7 @@ function Support() {
 
         <div className="bg-white/70 rounded-2xl p-6 border-l-4 border-gold-dark">
           <p className="text-base italic text-base-dark leading-relaxed mb-4">
-            "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "Financial independence begins with knowledge. We help women develop practical financial and digital skills, from budgeting and online tools to career readiness and business development, enabling them to thrive in an increasingly digital world."
           </p>
           <div className="flex items-center gap-3">
             <div className="w-7 h-7 bg-accent-light rounded-full flex items-center justify-center flex-shrink-0">

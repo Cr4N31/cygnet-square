@@ -17,18 +17,19 @@ function WhyWeStarted() {
         <div className="w-10 h-px bg-gold my-5" />
 
         <p className="text-sm text-accent-light opacity-75 leading-loose mb-5">
-          Lorem ipsum dolor sit amet,{' '}
+          Cygnet Square was founded on the belief that{' '}
           <strong className="text-on-base">
-            consectetur adipiscing elit sed do eiusmod
+            no woman should face life's challenges alone.
           </strong>{' '}
-          tempor incididunt ut labore et dolore magna aliqua ut enim ad minim
-          veniam quis nostrud exercitation ullamco laboris nisi ut aliquip.
+          Across many communities, women continue to encounter barriers to opportunity, 
+          limited access to essential resources, and a lack of supportive networks that enable personal and economic growth. 
+          We recognized the need for a space where women could connect, learn, and uplift one another.
         </p>
 
         <p className="text-sm text-accent-light opacity-75 leading-loose">
-          Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-          cupidatat non proident, sunt in culpa qui officia deserunt mollit.
+          Our journey began with a simple purpose: to create an inclusive community that equips women with practical skills, 
+          meaningful relationships, and access to opportunities that foster confidence, independence, and long-term success.
+          Today, that purpose continues to inspire everything we do as we work toward building stronger women, stronger families, and stronger communities.
         </p>
       </div>
 

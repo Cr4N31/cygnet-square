@@ -1,8 +1,8 @@
 import { Camera, ArrowRight, Feather } from 'lucide-react'
 import { FaInstagram, FaLinkedin, FaFacebookF} from 'react-icons/fa'
-import logo from '../../../public/assets/logos/logolight.png'
+import logo from '/assets/logos/logolight.png'
 
-const navLinks = ['Home', 'About', 'Events', 'Support', 'Contact']
+const navLinks = [{ label: 'Home', href: '/' }, { label: 'About', href: '/about' }, { label: 'Contact', href: '/contact' }]
 const programs = ['Digital Literacy', 'Networking', 'Capacity Building', 'Mentorship']
 const socials = [FaInstagram, FaLinkedin, FaFacebookF]
 
@@ -39,8 +39,8 @@ function Footer() {
           <p className="text-[11px] tracking-widest uppercase text-gold-dark font-medium mb-5">Navigate</p>
           <div className="flex flex-col gap-2.5">
             {navLinks.map((link) => (
-              <a key={link} href="#" className="text-sm text-accent-light opacity-75 hover:text-on-base transition-colors">
-                {link}
+              <a key={link.label} href={link.href} className="text-sm text-accent-light opacity-75 hover:text-on-base transition-colors">
+                {link.label}
               </a>
             ))}
           </div>

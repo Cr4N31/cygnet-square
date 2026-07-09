@@ -5,19 +5,19 @@ const pillars = [
     num: '01',
     icon: Users,
     title: 'Networking & Connection',
-    body: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    body: 'We create safe and inclusive spaces where women can build meaningful relationships, connect with mentors, exchange experiences, and grow through collaboration. By strengthening support networks, we foster confidence, belonging, and lasting community impact.',
   },
   {
     num: '02',
     icon: Lightbulb,
     title: 'Capacity Building',
-    body: 'Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    body: 'Through practical workshops, mentorship, and hands-on training, we equip women with the knowledge, digital skills, financial literacy, and leadership capabilities needed to unlock opportunities and thrive in an ever-changing world.',
   },
   {
     num: '03',
     icon: TrendingUp,
     title: 'Economic Empowerment',
-    body: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+    body: 'We connect women with resources, career pathways, entrepreneurial opportunities, and financial education that promote independence, sustainable livelihoods, and long-term economic resilience.',
   },
 ]
 
@@ -31,8 +31,10 @@ function OurApproach() {
         </h2>
         <div className="w-10 h-px bg-gold mx-auto mb-5" />
         <p className="text-sm text-white/60 leading-relaxed">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Our approach combines meaningful connections, practical skills development,
+          and access to opportunities to empower women at every stage of their journey.
+          Together, these pillars create lasting pathways toward confidence,
+          independence, and sustainable growth.
         </p>
       </div>
 

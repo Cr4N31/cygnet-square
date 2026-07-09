@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
-import logo from '../../../public/assets/logos/logolight.png'
+import logo from '/assets/logos/logolight.png'
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false)

@@ -1,4 +1,4 @@
-import heroBg from '../../../public/assets/imgs/hero.png'
+import heroBg from '/assets/imgs/hero.png'
 
 function Hero() {
   return (
@@ -6,28 +6,27 @@ function Hero() {
       <div className="flex flex-col md:flex-row gap-10 lg:gap-14 items-center">
         <div className="max-w-2xl">
           <span className="text-[11px] tracking-widest uppercase text-gold font-medium">
-            Empowered Women. Inclusive Communities.
+            Inclusive ·  Resourceful · Resilient
           </span>
 
           <h1 className="text-5xl heading leading-tight mt-4 mb-6 tracking-tight">
-            Where women and communities come to grow.
+            Where women come to connect, grow and thrive.
           </h1>
 
           <p className="text-white/60 leading-relaxed mb-8 max-w-lg">
-            Inclusive networking, capacity-building workshops, and access to
-            information that drives social and economic growth — for women who
-            deserve more.
+            We create opportunities for women through networking programs, skills development and access
+            to essential resources and empowering independent, financially secure lives.
           </p>
 
           <div className="flex gap-3 items-center flex-wrap">
             <a
-              href="#"
+              href="/contact"
               className="bg-gold text-on-base text-sm font-medium px-6 py-3 rounded-lg"
             >
               Join the community
             </a>
             <a
-              href="#"
+              href="/about"
               className="text-base-dark text-sm font-medium border-b border-base-mid-25 pb-0.5"
             >
               Learn more →

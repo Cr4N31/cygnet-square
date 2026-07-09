@@ -26,14 +26,14 @@ function TeamSection() {
           <Heart className="w-3.5 h-3.5" /> Our Leadership
         </span>
 
-        <h2 className="text-3xl font-normal text-base-dark leading-snug tracking-tight mb-5">
+        <h2 className="text-3xl font-normal text-accent leading-snug tracking-tight mb-5">
           Meet the people <br />
           <em className="italic text-gold-dark">behind the mission.</em>
         </h2>
 
         <div className="w-10 h-px bg-gold-dark mx-auto mb-6" />
 
-        <p className="text-sm text-base-mid leading-relaxed">
+        <p className="text-sm text-white/60 leading-relaxed">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim
           ad minim veniam.
