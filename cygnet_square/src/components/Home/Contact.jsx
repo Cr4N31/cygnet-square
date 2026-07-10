@@ -27,7 +27,7 @@ function Contact() {
   }
 
   return (
-    <section className="bg-base px-12 py-16 grid md:grid-cols-2 grid-cols-1 gap-14 items-center" data-aos="fade-up">
+    <section className="bg-mist px-12 py-16 grid md:grid-cols-2 grid-cols-1 gap-14 items-center" data-aos="fade-up">
 
       {/* Left — info */}
       <div>
@@ -35,11 +35,11 @@ function Contact() {
           Get in touch
         </span>
 
-        <h2 className="text-4xl font-medium text-accent leading-tight tracking-tight mt-4 mb-5">
+        <h2 className="text-5xl font-medium text-accent leading-tight tracking-tight mt-4 mb-5">
           Let's start a <span className="text-gold">conversation.</span>
         </h2>
 
-        <p className="text-sm text-white/60 leading-relaxed mb-9 max-w-sm">
+        <p className="text-lg text-base leading-relaxed mb-9 max-w-sm">
           Whether you're looking to volunteer, seeking support, or interested
           in partnering with us — our team is ready to connect.
         </p>
@@ -51,7 +51,7 @@ function Contact() {
             </div>
             <div>
               <p className="text-sm font-semibold text-gold mb-0.5">Email Us</p>
-              <p className="text-sm text-white/60">
+              <p className="text-sm text-base leading-relaxed">
                 <a href="mailto:cygnetsquare@gmail.com" className="hover:underline">cygnetsquare@gmail.com</a>
               </p>
             </div>
@@ -63,19 +63,19 @@ function Contact() {
             </div>
             <div>
               <p className="text-sm font-semibold text-gold mb-0.5">Visit Us</p>
-              <p className="text-sm text-white/60">Montreal, Quebec.</p>
+              <p className="text-sm text-base leading-relaxed">Montreal, Quebec.</p>
             </div>
           </div>
         </div>
       </div>
 
       {/* Right — form */}
-      <div className="bg-[#20B2AA]/30 rounded-2xl p-8">
+      <div className="bg-accent/60 rounded-2xl p-8">
         <form onSubmit={handleSubmit}>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 mb-3.5">
             <div>
-              <label className="text-xs font-medium text-gold block mb-1.5">Full Name</label>
+              <label className="text-sm font-medium text-gold block mb-1.5">Full Name</label>
               <input
                 type="text"
                 placeholder="Jane Doe"
@@ -85,7 +85,7 @@ function Contact() {
               />
             </div>
             <div>
-              <label className="text-xs font-medium text-gold block mb-1.5">Email Address</label>
+              <label className="text-sm font-medium text-gold block mb-1.5">Email Address</label>
               <input
                 type="email"
                 placeholder="jane@example.com"
@@ -97,7 +97,7 @@ function Contact() {
           </div>
 
           <div className="mb-3.5">
-              <label className="text-xs font-medium text-gold block mb-1.5">Subject</label>
+              <label className="text-sm font-medium text-gold block mb-1.5">Subject</label>
             <div className="relative">
               <select
                 value={formData.subject}
@@ -113,7 +113,7 @@ function Contact() {
           </div>
 
           <div className="mb-4.5">
-            <label className="text-xs font-medium text-gold block mb-1.5">Message</label>
+            <label className="text-sm font-medium text-gold block mb-1.5">Message</label>
             <textarea
               placeholder="How can we help you?"
               value={formData.message}

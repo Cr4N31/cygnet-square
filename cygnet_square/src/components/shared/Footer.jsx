@@ -10,7 +10,7 @@ function Footer() {
   return (
     <footer className="bg-base px-12 pt-12">
 
-      <div className="flex flex-col md:flex-row items-center justify-between gap-12 pb-10">
+      <div className="flex flex-col md:flex-row items-start md:items-center md:justify-between gap-12 pb-10">
 
         {/* Brand */}
         <div>

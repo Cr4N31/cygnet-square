@@ -23,14 +23,14 @@ const pillars = [
 
 function OurApproach() {
   return (
-    <section className="bg-accent-light px-12 py-16" data-aos="fade-up">
+    <section className="bg-mist px-12 py-16" data-aos="fade-up">
 
       <div className="text-center max-w-xl mx-auto mb-10">
-        <h2 className="text-3xl font-normal text-accent tracking-tight mb-4">
+        <h2 className="text-4xl font-normal text-accent tracking-tight mb-4">
           Our <em className="italic text-gold">integrated approach.</em>
         </h2>
         <div className="w-10 h-px bg-gold mx-auto mb-5" />
-        <p className="text-sm text-white/60 leading-relaxed">
+        <p className="text-lg text-[#0C2E3A] leading-relaxed">
           Our approach combines meaningful connections, practical skills development,
           and access to opportunities to empower women at every stage of their journey.
           Together, these pillars create lasting pathways toward confidence,
@@ -46,7 +46,7 @@ function OurApproach() {
               <Icon className="w-4.5 h-4.5 text-gold" />
             </div>
             <h3 className="text-lg font-bold cormorant text-gold mb-1.5">{title}</h3>
-            <p className="text-xs text-white/60 leading-relaxed">{body}</p>
+            <p className="text-sm text-[#0C2E3A] leading-relaxed">{body}</p>
           </div>
         ))}
       </div>

@@ -38,12 +38,13 @@ h1, h2, h3, h4, h5, h6 {
 	--accent-light: #E0F2F1;
 	--gold: #D4AF37;
 	--gold-dark: #A07820;
+    --mist: #E0F2F1;
 }
 
 /* Typography tokens */
 :root{
 	--ff-sans: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-	--text-on-base: #F7FBFA; /* subtle near-white for dark backgrounds */
+	--text-on-base: #E0F2F1; /* subtle near-white for dark backgrounds */
 	--text-muted-rgba: rgba(224,242,241,0.75);
 	--text-on-light: var(--base-dark);
 }
@@ -63,6 +64,9 @@ h1, h2, h3, h4, h5, h6 {
 .bg-base{background-color:var(--base)!important}
 .text-base{color:var(--base)!important}
 .border-base{border-color:var(--base)!important}
+
+.bg-mist{background-color:var(--mist)!important}
+.text-mist{color:var(--mist)!important}
 
 .bg-base-dark{background-color:var(--base-dark)!important}
 .text-base-dark{color:var(--base-dark)!important}

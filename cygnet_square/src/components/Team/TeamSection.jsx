@@ -19,7 +19,7 @@ const team = [
 
 function TeamSection() {
   return (
-    <section className="bg-accent-light px-12 py-16" data-aos="fade-up">
+    <section className="bg-mist px-12 py-16" data-aos="fade-up">
 
       <div className="text-center max-w-xl mx-auto mb-12">
         <span className="text-[11px] tracking-widest uppercase text-gold-dark font-medium border border-gold px-3.5 py-1 rounded-full inline-flex items-center gap-1.5 mb-5">
@@ -28,12 +28,12 @@ function TeamSection() {
 
         <h2 className="text-3xl font-normal text-accent leading-snug tracking-tight mb-5">
           Meet the people <br />
-          <em className="italic text-gold-dark">behind the mission.</em>
+          <em className="italic text-gold">behind the mission.</em>
         </h2>
 
         <div className="w-10 h-px bg-gold-dark mx-auto mb-6" />
 
-        <p className="text-sm text-white/60 leading-relaxed">
+        <p className="text-sm text-[#0C2E26] leading-relaxed">
           Cygnet Square is led by people who believe that empowering women
           through community and opportunity is not just a program — it's a
           responsibility.
@@ -52,16 +52,16 @@ function TeamSection() {
               <p className="text-lg font-semibold text-accent mb-0.5">{name}</p>
               <p className="text-sm text-gold font-medium mb-3.5">{role}</p>
 
-              <p className="text-xs text-white/60 leading-relaxed mb-5">{bio}</p>
+              <p className="text-sm text-[#0C2E26] leading-relaxed mb-5">{bio}</p>
 
-              <div className="bg-base border-l-[2.5px] border-gold-dark rounded-r-lg px-4 py-3 mb-5">
-                <p className="text-xs italic text-gold leading-relaxed">{quote}</p>
+              <div className="bg-mist border-l-[2.5px] border-gold-dark rounded-r-lg px-4 py-3 mb-5">
+                <p className="text-sm italic text-[#0C2E26] leading-relaxed">{quote}</p>
               </div>
 
               <p className="text-[10px] tracking-widest uppercase text-gray-400 mb-2">Areas of focus</p>
               <div className="flex gap-1.5 flex-wrap mb-5">
                 {tags.map((tag) => (
-                  <span key={tag} className="bg-accent-light text-gold text-xs px-3 py-1 rounded-full">
+                  <span key={tag} className="bg-accent-light text-gold text-sm px-3 py-1 rounded-full">
                     {tag}
                   </span>
                 ))}

@@ -29,14 +29,14 @@ function Support() {
           What we offer
         </p>
 
-        <h2 className="text-4xl font-normal italic text-accent leading-tight tracking-tight mb-0">
+        <h2 className="text-5xl font-normal italic text-accent leading-tight tracking-tight mb-0">
           Support that meets{' '}
           <em className="text-gold">women where they are.</em>
         </h2>
 
         <div className="w-10 h-px bg-gold my-5" />
 
-        <p className="text-sm text-white/60 leading-relaxed mb-10">
+        <p className="text-lg text-white/60 leading-relaxed mb-10">
           We turn our mission into meaningful impact by focusing on three key areas of practical, community-driven support.
         </p>
 
@@ -52,8 +52,8 @@ function Support() {
                 {num}
               </span>
               <div>
-                <h3 className="text-lg font-bold cormorant text-gold mb-1">{title}</h3>
-                <p className="text-xs text-white/60 leading-relaxed">{body}</p>
+                <h3 className="text-xl font-bold cormorant text-gold mb-1">{title}</h3>
+                <p className="text-sm text-white/60 leading-relaxed">{body}</p>
               </div>
             </div>
           ))}

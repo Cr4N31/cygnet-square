@@ -49,11 +49,11 @@ function Features() {
           Community impact
         </span>
 
-        <h2 className="text-3xl font-medium text-gold leading-snug mt-4 mb-3 tracking-tight">
+        <h2 className="text-4xl font-medium text-gold leading-snug mt-4 mb-3 tracking-tight">
           Building resilience through connection and capacity.
         </h2>
 
-        <p className="text-sm text-white/60 leading-relaxed mb-6">
+        <p className="text-lg text-white/60 leading-relaxed mb-6">
           By combining a supportive, community-driven approach with modern tools, we empower women to build independent, safe and financially secure lives
           while fostering meaningful connections that promote long-term economic stability.
         </p>
@@ -65,7 +65,7 @@ function Features() {
               className="bg-white/[0.07] border border-white/10 rounded-lg p-4"
             >
               <i className={`ti ${icon} text-gold-dark text-lg mb-2 block`} aria-hidden="true" />
-              <p className="text-[11px] cormorant text-accent-light uppercase tracking-wider mb-1">{label}</p>
+              <p className="text-sm cormorant text-accent-light uppercase tracking-wider mb-1">{label}</p>
               <p className="text-2xl font-medium text-accent">{value}</p>
             </div>
           ))}

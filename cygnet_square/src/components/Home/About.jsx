@@ -21,7 +21,7 @@ const pillars = [
 
 function About() {
   return (
-    <section className="bg-[#084059] px-12 py-16 grid md:grid-cols-2 grid-cols-1 gap-12 items-center">
+    <section className="bg-mist px-12 py-16 grid md:grid-cols-2 grid-cols-1 gap-12 items-center">
 
       {/* Left — copy */}
       <div>
@@ -34,11 +34,11 @@ function About() {
           <span className="text-[#D4AF37]">not by chance.</span>
         </h2>
 
-        <p className="text-sm text-white/70 leading-relaxed mb-3">
+        <p className="text-lg text-base leading-relaxed mb-3">
           Cygnet Square is an {' '}
           <strong>inclusive, resourceful, and resilient </strong> organization built to bring WOMEN together,
         </p>
-        <p className="text-sm text-white/70 leading-relaxed mb-7">
+        <p className="text-lg text-base leading-relaxed mb-7">
           We create opportunities for women to connect, grow, and thrive through inclusive networking programs, 
           hands-on skills development workshops, and access to essential resources. Rooted in community and driven by purpose, 
           we equip women with the tools, relationships, and knowledge they need to build independent and financially secure lives. Because when women rise together, entire communities are transformed
@@ -54,8 +54,8 @@ function About() {
                 <Icon className="w-5 h-5 text-[#085041]" />
               </div>
               <div>
-                <h3 className="text-lg font-bold cormorant text-[#D4AF37] mb-1">{title}</h3>
-                <p className="text-xs text-white/70 leading-relaxed">{body}</p>
+                <h3 className="text-xl font-bold cormorant text-[#D4AF37] mb-1">{title}</h3>
+                <p className="text-sm text-base leading-relaxed">{body}</p>
               </div>
             </div>
           ))}
@@ -63,7 +63,7 @@ function About() {
 
         <a
           href="/about"
-          className="inline-flex items-center gap-2 bg-[#20B2AA]/30 hover:bg-[#085041]/20 transition-all duration-250 text-white text-sm font-medium px-6 py-3 rounded-lg"
+          className="inline-flex items-center gap-2 bg-accent hover:bg-base-dark transition-all duration-250 text-white text-sm font-medium px-6 py-3 rounded-lg"
         >
           Learn more about us <ArrowRight className="w-4 h-4" />
         </a>
@@ -80,7 +80,7 @@ function About() {
         </div>
 
         {/* Top-right badge */}
-        <div className="absolute top-5 -right-4 bg-[#085041] text-white rounded-xl px-4 py-2.5 hover:px-5 hover:py-3 transition-all duration-250 text-center shadow-lg">
+        <div className="absolute top-5 -right-4 bg-base text-white rounded-xl px-4 py-2.5 hover:px-5 hover:py-3 transition-all duration-250 text-center shadow-lg">
           <p className="text-xl font-semibold leading-none">500+</p>
           <p className="text-[10px] opacity-75 tracking-wide mt-1">Lives impacted</p>
         </div>
@@ -88,11 +88,11 @@ function About() {
         {/* Bottom-left badge */}
         <div className="absolute bottom-6 -left-4 bg-white/50 backdrop-blur-sm rounded-xl px-4 py-2.5 flex items-center gap-3 shadow-lg">
           <div className="bg-[#E0F2F1] rounded-full p-2">
-            <Heart className="w-4 h-4 text-[#085041]" />
+            <Heart className="w-4 h-4 text-[#0C2E3A]" />
           </div>
           <div>
             <p className="text-[10px] text-gray-900 tracking-wide">Community-driven</p>
-            <p className="text-sm font-semibold text-[#085041]">Since 2020</p>
+            <p className="text-sm font-semibold text-[#0C2E3A]">Since 2020</p>
           </div>
         </div>
       </div>

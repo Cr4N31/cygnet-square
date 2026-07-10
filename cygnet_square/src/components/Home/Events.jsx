@@ -36,11 +36,11 @@ function Events() {
           <span className="border border-gold rounded-full w-fit text-[11px] tracking-widest uppercase text-gold font-medium px-3 py-1">
             Cygnet Events
           </span>
-          <h2 className="text-3xl font-medium text-accent leading-snug tracking-tight">
+          <h2 className="text-4xl font-medium text-accent leading-snug tracking-tight">
             Empowering women through{' '}
             <span className="text-gold">capacity-building events</span>
           </h2>
-          <p className="text-sm text-white/60 leading-relaxed">
+          <p className="text-lg text-white/60 leading-relaxed">
             We create opportunities for women to build meaningful relationships
             through mentorship programs, peer support circles, networking events,
             and community meetups that foster trust, collaboration, and personal

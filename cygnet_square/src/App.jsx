@@ -6,7 +6,7 @@ function App() {
 
   useEffect(() => {
     AOS.init({
-      duration: 300,
+      duration: 500,
       once: true, // animation happens only once, not on every scroll
     })
   }, [])

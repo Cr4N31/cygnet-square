@@ -1,7 +1,7 @@
 import right_img from '/assets/imgs/img3.webp'
 function AboutHero() {
   return (
-    <section className="bg-accent-light px-12 py-16" data-aos="fade-up">
+    <section className="bg-mist px-12 py-16" data-aos="fade-up">
 
       <div className="text-center max-w-2xl mx-auto mb-10">
         <span className="text-[11px] tracking-widest uppercase text-gold font-medium border border-gold px-3.5 py-1 rounded-full inline-block mb-5">
@@ -15,7 +15,7 @@ function AboutHero() {
 
         <div className="w-10 h-px bg-gold mx-auto mb-6" />
 
-        <p className="text-sm text-white/60 leading-relaxed">
+        <p className="text-lg text-[#0C2E26] leading-relaxed">
           Cygnet Square is an inclusive and resilient organization that brings women together to connect, 
           learn, and grow. Through a supportive community built on collaboration, diversity, and shared experiences,
           we create opportunities that empower women to overcome barriers, develop practical skills, and build brighter, 
