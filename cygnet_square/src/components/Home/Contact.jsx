@@ -51,7 +51,9 @@ function Contact() {
             </div>
             <div>
               <p className="text-sm font-semibold text-gold mb-0.5">Email Us</p>
-              <p className="text-sm text-white/60">hello@cygnetsquare.org</p>
+              <p className="text-sm text-white/60">
+                <a href="mailto:cygnetsquare@gmail.com" className="hover:underline">cygnetsquare@gmail.com</a>
+              </p>
             </div>
           </div>
 
@@ -61,7 +63,7 @@ function Contact() {
             </div>
             <div>
               <p className="text-sm font-semibold text-gold mb-0.5">Visit Us</p>
-              <p className="text-sm text-white/60">City, State, Country</p>
+              <p className="text-sm text-white/60">Montreal, Quebec.</p>
             </div>
           </div>
         </div>
@@ -121,12 +123,12 @@ function Contact() {
             />
           </div>
 
-          <button
-            type="submit"
+          <a
+            href={`mailto:cygnetsquare@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent("Name: " + formData.name + "\nEmail: " + formData.email + "\n\n" + formData.message)}`}
             className="w-full bg-base text-on-base text-sm font-medium py-3 rounded-lg flex items-center justify-center gap-2 hover:bg-base-mid duration-300 transition-colors"
           >
             Send Message <Send className="w-4 h-4" />
-          </button>
+          </a>
 
           <p className="text-xs text-base-mid text-center mt-2.5">
             We typically respond within 24 hours.

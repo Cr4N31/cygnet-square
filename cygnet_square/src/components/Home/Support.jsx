@@ -52,7 +52,7 @@ function Support() {
                 {num}
               </span>
               <div>
-                <p className="text-sm font-medium text-gold mb-1">{title}</p>
+                <h3 className="text-lg font-bold cormorant text-gold mb-1">{title}</h3>
                 <p className="text-xs text-white/60 leading-relaxed">{body}</p>
               </div>
             </div>

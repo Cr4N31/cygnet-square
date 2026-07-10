@@ -2,18 +2,18 @@ import { Heart, UserCircle, Mail } from 'lucide-react'
 
 const team = [
   {
-    name: 'Lorem Ipsum',
+    name: 'Maryam Mohammed',
     role: 'Founder / Director',
-    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam quis nostrud.',
-    quote: '"Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt."',
-    tags: ['Lorem Ipsum', 'Dolor Sit', 'Amet Consectetur'],
+    bio: "A passionate advocate for women's empowerment and community inclusion. With a deep commitment to breaking systemic barriers, Maryam founded Cygnet Square to ensure that every woman — regardless of background or circumstance — has access to the networks, skills, and resources she needs to thrive.",
+    quote: '"Every woman deserves a safe community, a seat at the table, and the tools to build the life she envisions."',
+    tags: ['Inclusive Networking', 'Community Strategy', 'Women Empowerment'],
   },
   {
-    name: 'Lorem Ipsum',
+    name: 'Ghaffar AbdulAziz',
     role: 'Director',
-    bio: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.',
-    quote: '"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium."',
-    tags: ['Lorem Ipsum', 'Dolor Sit Amet', 'Consectetur'],
+    bio: 'A dedicated community builder with a focus on creating culturally sensitive programs that celebrate diversity. Ghaffar brings expertise in organizational development, partnership building, and capacity-building initiatives that drive long-term social and economic impact.',
+    quote: '"When we invest in women and welcome all voices with dignity, we build a community that lifts everyone."',
+    tags: ['Capacity Building', 'Partnership Development', 'Program Design'],
   },
 ]
 
@@ -34,14 +34,14 @@ function TeamSection() {
         <div className="w-10 h-px bg-gold-dark mx-auto mb-6" />
 
         <p className="text-sm text-white/60 leading-relaxed">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim
-          ad minim veniam.
+          Cygnet Square is led by people who believe that empowering women
+          through community and opportunity is not just a program — it's a
+          responsibility.
         </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {team.map(({ name, role, bio, quote, tags }) => (
+        {team.map(({ name, role, bio, quote, tags }) => (
           <div key={name} className="bg-white/[0.06] rounded-2xl overflow-hidden border border-base-dark-10">
 
             <div className="bg-accent-light h-56 flex items-center justify-center">
@@ -49,7 +49,7 @@ function TeamSection() {
             </div>
 
             <div className="p-6">
-              <p className="text-lg font-semibold text-base-dark mb-0.5">{name}</p>
+              <p className="text-lg font-semibold text-accent mb-0.5">{name}</p>
               <p className="text-sm text-gold font-medium mb-3.5">{role}</p>
 
               <p className="text-xs text-white/60 leading-relaxed mb-5">{bio}</p>
@@ -66,9 +66,8 @@ function TeamSection() {
                   </span>
                 ))}
               </div>
-
               <a
-                href="#"
+                href="mailto:cygnetsquare@gmail.com"
                 className="inline-flex items-center gap-1.5 bg-base hover:bg-gold-dark transition-all duration-300 text-on-base text-xs font-medium px-4 py-2.5 rounded-lg"
               >
                 <Mail className="w-3.5 h-3.5" /> Send Email

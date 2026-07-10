@@ -10,7 +10,7 @@ function Footer() {
   return (
     <footer className="bg-base px-12 pt-12">
 
-      <div className="grid grid-cols-1 md:grid-cols-[1.4fr_1fr_1fr_1.2fr] gap-12 pb-10">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-12 pb-10">
 
         {/* Brand */}
         <div>
@@ -57,28 +57,6 @@ function Footer() {
             ))}
           </div>
         </div>
-
-        {/* Newsletter */}
-        <div>
-          <p className="text-[11px] tracking-widest uppercase text-gold-dark font-medium mb-5">Stay connected</p>
-          <p className="text-xs text-accent-light opacity-60 leading-relaxed mb-4">
-            Get updates on upcoming events and programs.
-          </p>
-          <form className="flex bg-white/[0.07] border border-white/15 rounded-lg p-1 pl-3.5 items-center">
-            <input
-              type="email"
-              placeholder="Your email"
-              className="bg-transparent border-none outline-none text-on-base text-xs flex-1 py-2 placeholder:text-accent-light/40"
-            />
-            <button
-              type="submit"
-              className="bg-gold-dark text-on-base rounded-md px-3.5 py-2 flex items-center hover:bg-gold-dark transition-colors"
-            >
-              <ArrowRight className="w-3.5 h-3.5" />
-            </button>
-          </form>
-        </div>
-
       </div>
 
       {/* Bottom bar */}

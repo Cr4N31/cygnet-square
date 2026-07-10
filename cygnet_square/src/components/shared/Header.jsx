@@ -14,7 +14,7 @@ function Header() {
   ]
 
   const linkClass = ({ isActive }) =>
-    `relative pb-1 font-medium transition-colors text-sm ${
+    `relative pb-1  font-medium transition-colors text-sm ${
       isActive ? 'text-accent' : 'text-gold hover:text-gold-80'
     } after:absolute after:left-0 after:bottom-0 after:h-[1.5px] after:bg-accent after:transition-all after:duration-300 ${
       isActive ? 'after:w-full' : 'after:w-0'
@@ -70,7 +70,7 @@ function Header() {
                     }`
                   }
                 >
-                  {n.name}
+                  <h3 className="dm-sans">{n.name}</h3>
                 </NavLink>
               </li>
             ))}

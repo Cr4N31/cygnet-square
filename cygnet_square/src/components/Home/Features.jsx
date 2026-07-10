@@ -65,7 +65,7 @@ function Features() {
               className="bg-white/[0.07] border border-white/10 rounded-lg p-4"
             >
               <i className={`ti ${icon} text-gold-dark text-lg mb-2 block`} aria-hidden="true" />
-              <p className="text-[11px] text-accent-light uppercase tracking-wider mb-1">{label}</p>
+              <p className="text-[11px] cormorant text-accent-light uppercase tracking-wider mb-1">{label}</p>
               <p className="text-2xl font-medium text-accent">{value}</p>
             </div>
           ))}

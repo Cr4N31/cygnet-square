@@ -54,7 +54,7 @@ function About() {
                 <Icon className="w-5 h-5 text-[#085041]" />
               </div>
               <div>
-                <p className="text-sm font-semibold text-[#D4AF37] mb-1">{title}</p>
+                <h3 className="text-lg font-bold cormorant text-[#D4AF37] mb-1">{title}</h3>
                 <p className="text-xs text-white/70 leading-relaxed">{body}</p>
               </div>
             </div>

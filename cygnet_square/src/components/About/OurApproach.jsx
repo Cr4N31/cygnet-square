@@ -45,7 +45,7 @@ function OurApproach() {
             <div className="w-9 h-9 bg-base rounded-lg flex items-center justify-center my-4">
               <Icon className="w-4.5 h-4.5 text-gold" />
             </div>
-            <p className="text-base font-medium text-gold mb-1.5">{title}</p>
+            <h3 className="text-lg font-bold cormorant text-gold mb-1.5">{title}</h3>
             <p className="text-xs text-white/60 leading-relaxed">{body}</p>
           </div>
         ))}

@@ -5,11 +5,11 @@ function Hero() {
     <section className="bg-base px-6 sm:px-10 lg:px-12 pt-16 pb-12 min-h-[520px]" data-aos="fade-up">
       <div className="flex flex-col md:flex-row gap-10 lg:gap-14 items-center">
         <div className="max-w-2xl">
-          <span className="text-[11px] tracking-widest uppercase text-gold font-medium">
+          <span className="text-[11px] dm-sans tracking-widest uppercase text-gold font-medium">
             Inclusive ·  Resourceful · Resilient
           </span>
 
-          <h1 className="text-5xl heading leading-tight mt-4 mb-6 tracking-tight">
+          <h1 className="text-5xl heading text-white font-bold leading-tight mt-4 mb-6 tracking-tight">
             Where women come to connect, grow and thrive.
           </h1>
 

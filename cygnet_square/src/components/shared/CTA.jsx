@@ -2,7 +2,7 @@ function CTA() {
   return (
     <section className="bg-base px-12 py-16 text-center" data-aos="fade-up">
 
-      <h2 className="text-3xl font-normal heading tracking-tight mb-4">
+      <h2 className="text-4xl font-bold cormorant text-white mb-4">
         Want to <em className="italic text-gold-dark">join our mission?</em>
       </h2>
 
