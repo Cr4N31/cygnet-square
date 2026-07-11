@@ -48,14 +48,14 @@ function About() {
           {pillars.map(({ icon: Icon, title, body }) => (
             <div
               key={title}
-              className="bg-[#20B2AA]/30 border border-[#0F6E56]/10 rounded-xl p-4 flex gap-4 items-start"
+              className="bg-base border border-[#0F6E56]/10 rounded-xl p-4 flex gap-4 items-start"
             >
               <div className="bg-[#20B2AA] rounded-lg p-2 flex-shrink-0">
                 <Icon className="w-5 h-5 text-[#085041]" />
               </div>
               <div>
                 <h3 className="text-xl font-bold cormorant text-[#D4AF37] mb-1">{title}</h3>
-                <p className="text-sm text-base leading-relaxed">{body}</p>
+                <p className="text-sm text-white/75 leading-relaxed">{body}</p>
               </div>
             </div>
           ))}
