@@ -55,7 +55,7 @@ function About() {
               </div>
               <div>
                 <h3 className="text-xl font-bold cormorant text-[#D4AF37] mb-1">{title}</h3>
-                <p className="text-sm text-white/75 leading-relaxed">{body}</p>
+                <p className="text-sm text-white leading-relaxed">{body}</p>
               </div>
             </div>
           ))}

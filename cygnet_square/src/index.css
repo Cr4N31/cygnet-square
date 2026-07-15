@@ -1,31 +1,96 @@
 @import "tailwindcss";
 
-.cormorant {
-  font-family: "Cormorant", serif;
-  font-optical-sizing: auto;
-  font-weight: bolder;
-  font-style: normal;
-}
-
-
-.dm-sans {
-  font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: bold;
-  font-style: normal;
-}
-
-p, a, li, button {
-  font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
+@font-face {
+  font-family: "Tomato Grotesk";
+  src: url("/fonts/Tomato Grotesk/TG Regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Tomato Grotesk";
+  src: url("/fonts/Tomato Grotesk/TG Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tomato Grotesk";
+  src: url("/fonts/Tomato Grotesk/TG SemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tomato Grotesk";
+  src: url("/fonts/Tomato Grotesk/TG Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tomato Grotesk";
+  src: url("/fonts/Tomato Grotesk/TG ExtraBold.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tomato Grotesk";
+  src: url("/fonts/Tomato Grotesk/TG Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Suisse Intl";
+  src: url("/fonts/suisse/SuisseIntl-Light/SuisseIntl-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Suisse Intl";
+  src: url("/fonts/suisse/SuisseIntl-Regular/SuisseIntl-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Suisse Intl";
+  src: url("/fonts/suisse/SuisseIntl-Medium/SuisseIntl-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Suisse Intl";
+  src: url("/fonts/suisse/SuisseIntl-SemiBold/SuisseIntl-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Suisse Intl";
+  src: url("/fonts/suisse/SuisseIntl-Bold/SuisseIntl-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cormorant,
+.font-serif,
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Cormorant", serif;
+  font-family: "Tomato Grotesk", "Arial", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-sans,
+body,
+p, a, li, button,
+input, textarea, select {
+  font-family: "Suisse Intl", "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-optical-sizing: auto;
   font-style: normal;
 }
 
@@ -43,15 +108,20 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Typography tokens */
 :root{
-	--ff-sans: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-	--text-on-base: #E0F2F1; /* subtle near-white for dark backgrounds */
+	--ff-body: "Suisse Intl", "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+	--ff-heading: "Tomato Grotesk", "Arial", sans-serif;
+	--text-on-base: #E0F2F1;
 	--text-muted-rgba: rgba(224,242,241,0.75);
 	--text-on-light: var(--base-dark);
 }
 
+body {
+  font-family: var(--ff-body);
+}
+
 /* Typography utilities */
-.heading{font-family:var(--ff-sans);font-weight:700;color:var(--text-on-base)!important}
-.subheading{font-family:var(--ff-sans);font-weight:600;color:var(--gold)!important}
+.heading{font-family:var(--ff-heading);font-weight:700;color:var(--text-on-base)!important}
+.subheading{font-family:var(--ff-heading);font-weight:600;color:var(--gold)!important}
 .lead{color:var(--text-muted-rgba)!important;font-size:1.05rem}
 .text-on-base{color:var(--text-on-base)!important}
 .text-on-light{color:var(--text-on-light)!important}
