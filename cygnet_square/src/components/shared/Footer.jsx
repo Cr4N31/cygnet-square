@@ -34,18 +34,6 @@ function Footer() {
           </div>
         </div>
 
-        {/* Navigate */}
-        <div>
-          <p className="text-[11px] tracking-widest uppercase text-gold-dark font-medium mb-5">Navigate</p>
-          <div className="flex flex-col gap-2.5">
-            {navLinks.map((link) => (
-              <a key={link.label} href={link.href} className="text-sm text-accent-light opacity-75 hover:text-on-base transition-colors">
-                {link.label}
-              </a>
-            ))}
-          </div>
-        </div>
-
         {/* Programs */}
         <div>
           <p className="text-[11px] tracking-widest uppercase text-gold-dark font-medium mb-5">Programs</p>
