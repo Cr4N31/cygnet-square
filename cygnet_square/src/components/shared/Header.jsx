@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import logo from "/assets/logos/logdark.png";
+import logo from "/assets/logos/cygretee.png";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,15 +24,9 @@ function Header() {
       {/* ================= HEADER ================= */}
 
       <header className="bg-mist sticky top-0 z-50 backdrop-blur-md">
-
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-10 py-5">
-
           <NavLink to="/">
-            <img
-              src={logo}
-              alt="Cygnet"
-              className="h-7 w-auto"
-            />
+            <img src={logo} alt="Cygnet" className="h-7 w-auto" />
           </NavLink>
 
           {/* Desktop */}
@@ -61,34 +55,25 @@ function Header() {
             className="md:hidden relative w-9 h-9 flex items-center justify-center"
           >
             <div className="w-6 flex flex-col gap-[5px]">
-
               <span
                 className={`h-[1.5px] bg-accent rounded-full transition-all duration-300 ${
-                  menuOpen
-                    ? "rotate-45 translate-y-[6px]"
-                    : ""
+                  menuOpen ? "rotate-45 translate-y-[6px]" : ""
                 }`}
               />
 
               <span
                 className={`h-[1.5px] bg-accent rounded-full transition-all duration-300 ${
-                  menuOpen
-                    ? "opacity-0"
-                    : ""
+                  menuOpen ? "opacity-0" : ""
                 }`}
               />
 
               <span
                 className={`h-[1.5px] bg-accent rounded-full transition-all duration-300 ${
-                  menuOpen
-                    ? "-rotate-45 -translate-y-[6px]"
-                    : ""
+                  menuOpen ? "-rotate-45 -translate-y-[6px]" : ""
                 }`}
               />
-
             </div>
           </button>
-
         </div>
       </header>
 
@@ -96,22 +81,14 @@ function Header() {
 
       <div
         className={`fixed inset-0 z-[60] bg-mist transition-all duration-500 md:hidden ${
-          menuOpen
-            ? "opacity-100 visible"
-            : "opacity-0 invisible"
+          menuOpen ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >
         <div className="flex flex-col h-full">
-
           {/* Top */}
 
           <div className="flex items-center justify-between px-6 py-6">
-
-            <img
-              src={logo}
-              alt="logo"
-              className="h-7 w-auto"
-            />
+            <img src={logo} alt="logo" className="h-7 w-auto" />
 
             <button
               onClick={() => setMenuOpen(false)}
@@ -119,21 +96,17 @@ function Header() {
             >
               Close
             </button>
-
           </div>
 
           {/* Content */}
 
           <div className="flex-1 flex flex-col justify-center px-8">
-
             <p className="uppercase tracking-[0.4em] text-xs text-gold mb-12">
               Navigation
             </p>
 
             <nav>
-
               <ul className="space-y-8">
-
                 {navLinks.map((item, index) => (
                   <li
                     key={item.name}
@@ -166,52 +139,33 @@ function Header() {
                     </NavLink>
                   </li>
                 ))}
-
               </ul>
-
             </nav>
-
           </div>
 
           {/* Footer */}
 
           <div className="px-8 pb-10">
-
             <div className="border-t border-gold-dark pt-8">
-
               <div className="flex justify-between uppercase tracking-[0.25em] text-[11px] text-gold">
-
-                <a
-                  href="#"
-                  className="hover:text-accent transition"
-                >
+                <a href="#" className="hover:text-accent transition">
                   Instagram
                 </a>
 
-                <a
-                  href="#"
-                  className="hover:text-accent transition"
-                >
+                <a href="#" className="hover:text-accent transition">
                   LinkedIn
                 </a>
 
-                <a
-                  href="#"
-                  className="hover:text-accent transition"
-                >
+                <a href="#" className="hover:text-accent transition">
                   Email
                 </a>
-
               </div>
 
               <p className="mt-8 text-[10px] tracking-[0.35em] text-gold/50 uppercase">
                 © 2026 Cygnet Initiative
               </p>
-
             </div>
-
           </div>
-
         </div>
       </div>
     </>
