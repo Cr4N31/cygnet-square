@@ -1,7 +1,7 @@
 import right_img from "/assets/imgs/img3.webp";
 function AboutHero() {
   return (
-    <section className="bg-mist px-12 py-16" data-aos="fade-up">
+    <section className="bg-mist px-6 py-16 md:px-12" data-aos="fade-up">
       <div className="text-center max-w-2xl mx-auto mb-10">
         <span className="text-[11px] tracking-widest uppercase text-gold font-medium border border-gold px-3.5 py-1 rounded-full inline-block mb-5">
           About Cygnet Square

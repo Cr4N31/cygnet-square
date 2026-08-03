@@ -23,7 +23,7 @@ function WhyWeStarted() {
 
           <div className="max-w-3xl space-y-5 text-[1.02rem] leading-[2] text-[#0C2E26]/80 md:text-[1.08rem]">
             <p>
-              <span className="float-left mr-3 mt-1 text-[4.5rem] leading-none text-gold-dark">
+              <span className="float-left mr-3 mt-1 text-[4.5rem] leading-none text-accent">
                 C
               </span>
               ygnet Square was founded on the belief that{" "}
