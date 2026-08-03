@@ -35,11 +35,11 @@ function Hero() {
           </div>
         </div>
 
-        <div className="relative -ml-3 md:ml-0">
+        <div className="relative">
           <img
             src={heroBg}
             alt="Community gathering and support"
-            className="w-xl h-full rounded-2xl object-cover"
+            className="w-xl h-full rounded-xl object-cover"
             loading="eager"
             decoding="async"
           />
