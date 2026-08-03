@@ -22,7 +22,7 @@ const pillars = [
 function Support() {
   return (
     <section
-      className="bg-base px-6 sm:px-10 lg:px-12 pt-16 pb-12  grid md:grid-cols-2 grid-cols-1 gap-16 items-start"
+      className="bg-base px-6 sm:px-10 lg:px-12 pt-16 pb-12 grid md:grid-cols-2 grid-cols-1 gap-16 items-start"
       data-aos="fade-up"
     >
       {/* Left — heading + numbered list */}

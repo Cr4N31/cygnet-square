@@ -12,7 +12,7 @@ function Features() {
   ];
 
   return (
-    <section className="bg-base rounded-t-xl p-10 grid md:grid-cols-2 grid-cols-1 gap-10 items-center">
+    <section className="bg-base rounded-t-xl px-6 sm:px-10 lg:px-12 pt-16 pb-12 grid md:grid-cols-2 grid-cols-1 gap-10 items-center">
       {/* Left — image + mini chart */}
       <div className="rounded-xl overflow-hidden bg-base min-h-[360px] relative flex flex-col justify-end">
         <picture>

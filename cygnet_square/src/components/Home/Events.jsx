@@ -32,7 +32,7 @@ function Events() {
   ];
 
   return (
-    <section className="bg-base p-10">
+    <section className="bg-base px-6 sm:px-10 lg:px-12 pt-16 pb-12">
       <div className="grid md:grid-cols-2 grid-cols-1 gap-10 items-center mb-10">
         <div className="flex flex-col gap-2">
           <span className="border border-gold rounded-full w-fit text-[11px] tracking-widest uppercase text-gold font-medium px-3 py-1">
