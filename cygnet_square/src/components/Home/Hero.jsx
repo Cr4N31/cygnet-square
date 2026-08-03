@@ -22,7 +22,7 @@ function Hero() {
             independent, financially secure lives.
           </p>
 
-          <div className="flex gap-5 items-center flex-wrap">
+          <div className="flex gap-5 mb-8 items-center flex-wrap">
             <a
               href="/contact"
               className="bg-gold text-on-base text-sm font-medium px-6 py-3 rounded-lg"

@@ -24,7 +24,7 @@ const pillars = [
 
 function About() {
   return (
-    <section className="bg-mist px-12 py-16  gap-12 items-center">
+    <section className="bg-mist px-6 sm:px-10 lg:px-12 pt-16 pb-12 gap-12 items-center">
       {/* Left — copy */}
       <div>
         <span className="text-[11px] tracking-widest uppercase text-[#A07820] font-medium border border-[#A07820] px-3 py-1 rounded-full">
