@@ -38,7 +38,7 @@ function About() {
 
         {/* Right — image + floating badges */}
         <div className="relative">
-          <div className="bg-[#0F6E56] mb-4 rounded-2xl  overflow-hidden">
+          <div className="bg-[#0F6E56] mb-12 rounded-2xl  overflow-hidden">
             <img
               src={right_img}
               alt="Cygnet Square community"
