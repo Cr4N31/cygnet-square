@@ -96,7 +96,9 @@ function About() {
                   className={`${bgColor} m-2 h-10 items-center justify-center relative flex flex-col w-fit rounded-full gap-3`}
                 >
                   {/* decorative circles pattern */}
-                  <div className="absolute -top-6 -right-6 w-24 h-24 rounded-full bg-white/5" />
+                  <div
+                    className={`absolute -top-6 -right-6 w-24 h-24 rounded-full ${bgColor} opacity-30`}
+                  />
                   <div className="absolute -bottom-8 -left-4 w-32 h-32 rounded-full bg-white/5" />
                   <div className="absolute top-4 left-8 w-12 h-12 rounded-full bg-white/5" />
 

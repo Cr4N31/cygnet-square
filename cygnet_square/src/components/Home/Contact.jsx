@@ -37,7 +37,7 @@ function Contact() {
           Get in touch
         </span>
 
-        <h2 className="text-5xl font-medium text-accent leading-tight tracking-tight mt-4 mb-5">
+        <h2 className="md:text-5xl text-4xl font-medium text-accent leading-tight tracking-tight mt-4 mb-5">
           Let's start a <span className="text-accent">conversation.</span>
         </h2>
 
