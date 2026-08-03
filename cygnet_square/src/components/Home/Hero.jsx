@@ -46,27 +46,28 @@ function Hero() {
         </div>
       </div>
 
-      <div className="flex gap-8 mt-12 pt-8 border-t border-base-mid-25 flex-wrap">
+      <div className="flex flex-col md:flex-row gap-8 mt-12 pt-8 border-t border-base-mid-25 flex-wrap">
         <div>
           <p className="text-4xl font-medium text-[#0C2E3A]">500+</p>
           <p className="text-sm text-gold uppercase tracking-widest mt-1">
             Active participants
           </p>
         </div>
-        <div className="w-px md:flex hidden bg-base-mid-25" />
+        <div className="w-px bg-base-mid-25" />
         <div>
           <p className="text-4xl font-medium text-[#0C2E3A]">BIPOC</p>
           <p className="text-sm text-gold uppercase tracking-widest mt-1">
             Women centered
           </p>
         </div>
-        <div className="w-px md:flex hidden bg-base-mid-25" />
+        <div className="w-px bg-base-mid-25" />
         <div>
           <p className="text-4xl font-medium text-[#0C2E3A]">3 Pillars</p>
           <p className="text-sm text-gold uppercase tracking-widest mt-1">
             Network · Learn · Access
           </p>
         </div>
+        <div className="w-px flex md:hidden bg-base-mid-25" />
       </div>
     </section>
   );
