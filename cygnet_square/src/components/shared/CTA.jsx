@@ -1,9 +1,8 @@
 function CTA() {
   return (
     <section className="bg-base px-12 py-16 text-center" data-aos="fade-up">
-
       <h2 className="text-4xl font-bold cormorant text-white mb-4">
-        Want to <em className="italic text-gold-dark">join our mission?</em>
+        Want to <em className="italic text-gold">join our mission?</em>
       </h2>
 
       <div className="w-10 h-px bg-gold-dark mx-auto mb-6" />
@@ -17,7 +16,7 @@ function CTA() {
       <div className="flex gap-3 justify-center flex-wrap">
         <a
           href="/contact"
-          className="bg-gold-dark text-on-base hover:bg-white/10 transition-all duration-300 text-sm font-medium px-7 py-3 rounded-lg"
+          className="bg-gold text-on-base hover:bg-white/10 transition-all duration-300 text-sm font-medium px-7 py-3 rounded-lg"
         >
           Get in Touch
         </a>
@@ -28,9 +27,8 @@ function CTA() {
           Learn About Us
         </a>
       </div>
-
     </section>
-  )
+  );
 }
 
-export default CTA
+export default CTA;

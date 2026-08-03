@@ -1,4 +1,4 @@
-import heroBg from "/assets/imgs/hero.png";
+import heroBg from "/assets/imgs/hero.webp";
 
 function Hero() {
   return (
@@ -35,11 +35,11 @@ function Hero() {
           </div>
         </div>
 
-        <div className="relative">
+        <div className="relative -ml-3 md:ml-0">
           <img
             src={heroBg}
             alt="Community gathering and support"
-            className="w-xl h-full object-cover"
+            className="w-xl h-full rounded-2xl object-cover"
             loading="eager"
             decoding="async"
           />
