@@ -23,7 +23,10 @@ const pillars = [
 
 function OurApproach() {
   return (
-    <section className="bg-mist px-6 py-16 md:px-12" data-aos="fade-up">
+    <section
+      className="bg-mist px-6 sm:px-10 lg:px-12 pt-16 pb-12"
+      data-aos="fade-up"
+    >
       <div className="text-center max-w-xl mx-auto mb-10">
         <h2 className="text-4xl font-normal text-accent tracking-tight mb-4">
           Our <span className="text-accent">integrated approach.</span>
@@ -39,7 +42,7 @@ function OurApproach() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {pillars.map(({ num, icon: Icon, title, body }) => (
-          <div key={num} className="bg-white/[0.06] rounded-2xl p-7">
+          <div key={num} className="bg-white/[0.06] rounded-2xl">
             <span className="text-[11px] text-gold font-medium tracking-wider">
               {num}
             </span>

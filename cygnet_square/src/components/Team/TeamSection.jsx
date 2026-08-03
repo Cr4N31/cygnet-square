@@ -21,7 +21,10 @@ const team = [
 
 function TeamSection() {
   return (
-    <section className="bg-mist px-12 py-16" data-aos="fade-up">
+    <section
+      className="bg-mist px-6 sm:px-10 lg:px-12 pt-16 pb-12"
+      data-aos="fade-up"
+    >
       <div className="text-center max-w-xl mx-auto mb-12">
         <span className="text-[11px] tracking-widest uppercase text-gold-dark font-medium border border-gold px-3.5 py-1 rounded-full inline-flex items-center gap-1.5 mb-5">
           <Heart className="w-3.5 h-3.5" /> Our Leadership

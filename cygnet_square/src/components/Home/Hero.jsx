@@ -46,7 +46,7 @@ function Hero() {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-8 mt-12 pt-8 border-t border-base-mid-25 flex-wrap">
+      <div className="flex flex-col md:flex-row gap-4 mt-12 pt-8 border-t border-base-mid-25 flex-wrap">
         <div>
           <p className="text-4xl font-medium text-[#0C2E3A]">500+</p>
           <p className="text-sm text-gold uppercase tracking-widest mt-1">
