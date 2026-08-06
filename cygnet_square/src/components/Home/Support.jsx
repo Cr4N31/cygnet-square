@@ -74,7 +74,7 @@ function Support() {
             className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="absolute bottom-4 right-4 bg-white/50 backdrop-blur-sm rounded-xl px-4 py-2.5 flex items-center gap-3">
-            <div className="w-2 h-2 rounded-full bg-gold-dark" />
+            <div className="w-2 h-2 rounded-full bg-gold" />
             <div>
               <p className="text-sm font-medium text-base-dark leading-tight">
                 Supporting 500+ women
@@ -86,7 +86,7 @@ function Support() {
           </div>
         </div>
 
-        <div className="bg-white/70 rounded-2xl p-6 border-l-4 border-gold-dark">
+        <div className="bg-white/70 rounded-2xl p-6 border-l-4 border-[#D4AF37]">
           <p className="text-base italic text-base-dark leading-relaxed mb-4">
             "Financial independence begins with knowledge. We help women develop
             practical financial and digital skills, from budgeting and online
@@ -101,9 +101,7 @@ function Support() {
               <p className="text-xs font-medium text-base-dark">
                 Community member
               </p>
-              <p className="text-[11px] text-gold-dark">
-                Cygnet Square participant
-              </p>
+              <p className="text-[11px] text-gold">Cygnet Square participant</p>
             </div>
           </div>
         </div>

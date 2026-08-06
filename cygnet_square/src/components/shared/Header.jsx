@@ -23,7 +23,7 @@ function Header() {
     <>
       {/* ================= HEADER ================= */}
 
-      <header className="bg-mist sticky top-0 z-50 backdrop-blur-md">
+      <header className="bg-mist top-0 z-50 backdrop-blur-md">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-10 py-5">
           <NavLink to="/">
             <img src={logo} alt="Cygnet" className="h-7 w-auto" />

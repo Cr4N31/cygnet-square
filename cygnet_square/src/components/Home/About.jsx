@@ -90,28 +90,30 @@ function About() {
             const Icon = icon;
 
             return (
-              <div key={title} className="bg-base rounded-xl overflow-hidden">
-                {/* Card header — icon + pattern instead of image */}
+              <div
+                key={title}
+                className="overflow-hidden rounded-2xl border border-[#0C2E26]/10 bg-white/80 shadow-[0_14px_40px_-24px_rgba(8,64,89,0.45)]"
+              >
                 <div
-                  className={`${bgColor} m-2 h-10 items-center justify-center relative flex flex-col w-fit rounded-full gap-3`}
+                  className={`${bgColor} relative flex min-h-[118px] items-center justify-center overflow-hidden px-5 py-6`}
                 >
-                  {/* decorative circles pattern */}
-                  <div
-                    className={`absolute -top-6 -right-6 w-24 h-24 rounded-full ${bgColor} opacity-30`}
-                  />
-                  <div className="absolute -bottom-8 -left-4 w-32 h-32 rounded-full bg-white/5" />
-                  <div className="absolute top-4 left-8 w-12 h-12 rounded-full bg-white/5" />
+                  <div className="absolute -right-3 -top-3 h-16 w-16 rounded-full bg-white/20" />
+                  <div className="absolute -bottom-6 -left-4 h-24 w-24 rounded-full bg-white/10" />
+                  <div className="absolute left-4 top-4 h-10 w-10 rounded-full bg-white/10" />
 
-                  <div className="w-10 h-8 rounded-full bg-white/10 flex items-center justify-center z-10">
-                    <Icon className="w-6 h-6 text-white/80" strokeWidth={1.5} />
+                  <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white/90 shadow-sm">
+                    <Icon
+                      className="h-5 w-5 text-[#0C2E26]"
+                      strokeWidth={1.6}
+                    />
                   </div>
                 </div>
 
-                <div>
-                  <h3 className="text-xl font-bold cormorant text-gold mb-1 px-4 pt-4">
+                <div className="px-4 pb-5 pt-4">
+                  <h3 className="mb-2 text-xl font-bold cormorant text-[#0C2E26]">
                     {title}
                   </h3>
-                  <p className="text-sm text-white/60 leading-relaxed px-4 pb-4">
+                  <p className="text-sm leading-relaxed text-[#0C2E26]/72">
                     {body}
                   </p>
                 </div>

@@ -1,4 +1,4 @@
-import heroBg from "/assets/imgs/hero.webp";
+import heroBg from "/assets/imgs/hero.png";
 
 function Hero() {
   return (
@@ -25,7 +25,7 @@ function Hero() {
           <div className="flex gap-5 mb-8 items-center flex-wrap">
             <a
               href="/contact"
-              className="bg-gold text-on-base text-sm font-medium px-6 py-3 rounded-lg"
+              className="bg-gold hover:bg-gold-dark transition-all duration-200 text-on-base text-sm font-medium px-6 py-3 rounded-lg"
             >
               Join the community
             </a>

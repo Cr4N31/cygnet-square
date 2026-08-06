@@ -47,7 +47,7 @@ function OurApproach() {
               {num}
             </span>
             <div className="w-9 h-9 bg-accent rounded-lg flex items-center justify-center my-4">
-              <Icon className="w-4.5 h-4.5 text-base" />
+              <Icon className="w-4.5 h-4.5 text-mist" />
             </div>
             <h3 className="text-lg font-bold cormorant text-gold mb-1.5">
               {title}

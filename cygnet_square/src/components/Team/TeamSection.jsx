@@ -1,9 +1,12 @@
 import { Heart, UserCircle, Mail } from "lucide-react";
+import maleUser from "/assets/userImgs/maleUser.jpg";
+import femaleUser from "/assets/userImgs/femaleUser.jpg";
 
 const team = [
   {
     name: "Maryam Mohammed",
     role: "Founder / Director",
+    img: femaleUser,
     bio: "A passionate advocate for women's empowerment and community inclusion. With a deep commitment to breaking systemic barriers, Maryam founded Cygnet Square to ensure that every woman — regardless of background or circumstance — has access to the networks, skills, and resources she needs to thrive.",
     quote:
       '"Every woman deserves a safe community, a seat at the table, and the tools to build the life she envisions."',
@@ -12,6 +15,7 @@ const team = [
   {
     name: "Ghaffar AbdulAziz",
     role: "Director",
+    img: maleUser,
     bio: "A dedicated community builder with a focus on creating culturally sensitive programs that celebrate diversity. Ghaffar brings expertise in organizational development, partnership building, and capacity-building initiatives that drive long-term social and economic impact.",
     quote:
       '"When we invest in women and welcome all voices with dignity, we build a community that lifts everyone."',
@@ -26,7 +30,7 @@ function TeamSection() {
       data-aos="fade-up"
     >
       <div className="text-center max-w-xl mx-auto mb-12">
-        <span className="text-[11px] tracking-widest uppercase text-gold-dark font-medium border border-gold px-3.5 py-1 rounded-full inline-flex items-center gap-1.5 mb-5">
+        <span className="text-[11px] tracking-widest uppercase text-gold font-medium border border-gold px-3.5 py-1 rounded-full inline-flex items-center gap-1.5 mb-5">
           <Heart className="w-3.5 h-3.5" /> Our Leadership
         </span>
 
@@ -45,15 +49,17 @@ function TeamSection() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {team.map(({ name, role, bio, quote, tags }) => (
+        {team.map(({ name, role, bio, quote, tags, img }) => (
           <div
             key={name}
-            className="bg-white/[0.06] rounded-2xl overflow-hidden border border-base-dark-10"
+            className="overflow-hidden rounded-2xl border border-base-dark-10 bg-white/[0.06]"
           >
-            <div className="bg-accent-light h-56 flex items-center justify-center">
-              <UserCircle
-                className="w-18 h-18 text-gold opacity-50"
-                strokeWidth={1.5}
+            <div className="bg-accent-light h-96 overflow-hidden">
+              <img
+                src={img}
+                alt={name}
+                className="h-full w-full object-cover object-center"
+                loading="lazy"
               />
             </div>
 
@@ -65,7 +71,7 @@ function TeamSection() {
                 {bio}
               </p>
 
-              <div className="bg-mist border-l-[2.5px] border-gold-dark rounded-r-lg px-4 py-3 mb-5">
+              <div className="bg-mist border-l-[2.5px] border-[#D4AF37] rounded-r-lg px-4 py-3 mb-5">
                 <p className="text-sm italic text-[#0C2E26] leading-relaxed">
                   {quote}
                 </p>
@@ -86,7 +92,7 @@ function TeamSection() {
               </div>
               <a
                 href="mailto:cygnetsquare@gmail.com"
-                className="inline-flex items-center gap-1.5 bg-base hover:bg-gold-dark transition-all duration-300 text-on-base text-xs font-medium px-4 py-2.5 rounded-lg"
+                className="inline-flex items-center gap-1.5 bg-gold hover:bg-gold-dark transition-all duration-300 text-on-base text-xs font-medium px-4 py-2.5 rounded-lg"
               >
                 <Mail className="w-3.5 h-3.5" /> Send Email
               </a>

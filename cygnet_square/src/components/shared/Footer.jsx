@@ -35,7 +35,7 @@ function Footer() {
             {socials.map((Icon, i) => (
               <div
                 key={i}
-                className="w-8 h-8 rounded-full bg-white/[0.08] flex items-center justify-center cursor-pointer hover:bg-gold-dark transition-colors"
+                className="w-8 h-8 rounded-full bg-white/[0.08] flex items-center justify-center cursor-pointer hover:bg-[#D4AF37] transition-colors"
               >
                 <Icon className="w-4 h-4 text-accent-light" />
               </div>
@@ -45,7 +45,7 @@ function Footer() {
 
         {/* Programs */}
         <div>
-          <p className="text-[11px] tracking-widest uppercase text-gold-dark font-medium mb-5">
+          <p className="text-[11px] tracking-widest uppercase text-gold font-medium mb-5">
             Programs
           </p>
           <div className="flex flex-col gap-2.5">
