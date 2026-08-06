@@ -27,7 +27,7 @@ function About() {
     <section className="bg-mist px-6 sm:px-10 lg:px-12 pt-16 pb-12 gap-12 items-center">
       {/* Left — copy */}
       <div>
-        <span className="text-[11px] tracking-widest uppercase text-[#A07820] font-medium border border-[#A07820] px-3 py-1 rounded-full">
+        <span className="text-[11px] tracking-widest uppercase text-[#D4AF37] font-medium border border-[#D4AF37] px-3 py-1 rounded-full">
           Who we are
         </span>
 
