@@ -4,18 +4,21 @@ const pillars = [
   {
     num: "01",
     icon: Users,
+    color: "#FF611A",
     title: "Networking & Connection",
     body: "We create safe and inclusive spaces where women can build meaningful relationships, connect with mentors, exchange experiences, and grow through collaboration. By strengthening support networks, we foster confidence, belonging, and lasting community impact.",
   },
   {
     num: "02",
     icon: Lightbulb,
+    color: "#7ed636",
     title: "Capacity Building",
     body: "Through practical workshops, mentorship, and hands-on training, we equip women with the knowledge, digital skills, financial literacy, and leadership capabilities needed to unlock opportunities and thrive in an ever-changing world.",
   },
   {
     num: "03",
     icon: TrendingUp,
+    color: "#20B2AA",
     title: "Economic Empowerment",
     body: "We connect women with resources, career pathways, entrepreneurial opportunities, and financial education that promote independence, sustainable livelihoods, and long-term economic resilience.",
   },
@@ -41,18 +44,32 @@ function OurApproach() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {pillars.map(({ num, icon: Icon, title, body }) => (
-          <div key={num} className="bg-white/[0.06] rounded-2xl">
-            <span className="text-[11px] text-gold font-medium tracking-wider">
+        {pillars.map(({ num, icon: Icon, title, body, color }) => (
+          <div
+            key={num}
+            className="rounded-2xl p-5"
+            style={{ backgroundColor: `${color}33` }}
+          >
+            <span
+              className="text-[11px] font-medium tracking-wider"
+              style={{ color }}
+            >
               {num}
             </span>
-            <div className="w-9 h-9 bg-accent rounded-lg flex items-center justify-center my-4">
-              <Icon className="w-4.5 h-4.5 text-mist" />
+
+            <div
+              className="w-14 h-14 rounded-full flex items-center justify-center my-4"
+              style={{ backgroundColor: `${color}33` }}
+            >
+              <Icon className="w-6 h-6" style={{ color }} />
             </div>
-            <h3 className="text-lg font-bold cormorant text-gold mb-1.5">
+
+            <h3 className="text-lg font-bold cormorant text-black mb-1.5">
               {title}
             </h3>
-            <p className="text-sm text-[#0C2E3A] leading-relaxed">{body}</p>
+            <p className="text-sm text-[#0C2E3A]/70 leading-relaxed mb-6">
+              {body}
+            </p>
           </div>
         ))}
       </div>

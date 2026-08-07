@@ -30,7 +30,7 @@ function TeamSection() {
       data-aos="fade-up"
     >
       <div className="text-center max-w-xl mx-auto mb-12">
-        <span className="text-[11px] tracking-widest uppercase text-gold font-medium border border-gold px-3.5 py-1 rounded-full inline-flex items-center gap-1.5 mb-5">
+        <span className="text-[11px] tracking-widest uppercase text-gold font-medium border border-gold px-3.5 py-1.5 rounded-full inline-flex items-center gap-1.5 mb-5">
           <Heart className="w-3.5 h-3.5" /> Our Leadership
         </span>
 
@@ -41,7 +41,7 @@ function TeamSection() {
 
         <div className="w-10 h-px bg-gold-dark mx-auto mb-6" />
 
-        <p className="text-lg text-[#0C2E26] leading-relaxed">
+        <p className="text-lg text-abyss/70 leading-relaxed">
           Cygnet Square is led by people who believe that empowering women
           through community and opportunity is not just a program — it's a
           responsibility.
@@ -52,47 +52,48 @@ function TeamSection() {
         {team.map(({ name, role, bio, quote, tags, img }) => (
           <div
             key={name}
-            className="overflow-hidden rounded-2xl border border-base-dark-10 bg-white/[0.06]"
+            className="overflow-hidden rounded-2xl border border-abyss/20 bg-white/[0.06]"
           >
-            <div className="bg-accent-light h-96 overflow-hidden">
+            <div className="bg-accent h-96 overflow-hidden">
               <img
                 src={img}
                 alt={name}
-                className="h-full w-full object-cover object-center"
+                className="h-full w-full object-cover object-top"
                 loading="lazy"
               />
             </div>
 
             <div className="p-6">
-              <p className="text-lg font-semibold text-accent mb-0.5">{name}</p>
-              <p className="text-sm text-gold font-medium mb-3.5">{role}</p>
+              <p className="text-lg font-semibold text-accent mb-1">{name}</p>
+              <p className="text-sm text-abyss font-medium mb-4">{role}</p>
 
-              <p className="text-sm text-[#0C2E26] leading-relaxed mb-5">
+              <p className="text-sm text-abyss/70 leading-relaxed mb-6">
                 {bio}
               </p>
 
-              <div className="bg-mist border-l-[2.5px] border-[#D4AF37] rounded-r-lg px-4 py-3 mb-5">
-                <p className="text-sm italic text-[#0C2E26] leading-relaxed">
+              <div className="bg-mist border-l-[2.5px] border-gold rounded-r-lg px-4 py-3 mb-6">
+                <p className="text-sm italic text-abyss/70 leading-relaxed">
                   {quote}
                 </p>
               </div>
 
-              <p className="text-[10px] tracking-widest uppercase text-gray-400 mb-2">
+              <p className="text-[10px] tracking-widest uppercase text-abyss/40 mb-2">
                 Areas of focus
               </p>
-              <div className="flex gap-1.5 flex-wrap mb-5">
+              <div className="flex gap-1.5 flex-wrap mb-6">
                 {tags.map((tag) => (
                   <span
                     key={tag}
-                    className="bg-accent-light text-gold text-sm px-3 py-1 rounded-full"
+                    className="bg-accent/10 border border-accent/30 text-abyss/70 text-xs font-medium px-3.5 py-1.5 rounded-full"
                   >
                     {tag}
                   </span>
                 ))}
               </div>
+
               <a
                 href="mailto:cygnetsquare@gmail.com"
-                className="inline-flex items-center gap-1.5 bg-gold hover:bg-gold-dark transition-all duration-300 text-on-base text-xs font-medium px-4 py-2.5 rounded-lg"
+                className="inline-flex items-center gap-1.5 bg-abyss hover:bg-accent transition-all duration-300 text-on-base text-xs font-medium px-4 py-2.5 rounded-lg"
               >
                 <Mail className="w-3.5 h-3.5" /> Send Email
               </a>

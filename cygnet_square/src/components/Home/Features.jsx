@@ -12,9 +12,9 @@ function Features() {
   ];
 
   return (
-    <section className="bg-base rounded-t-xl px-6 sm:px-10 lg:px-12 pt-16 pb-12 grid md:grid-cols-2 grid-cols-1 gap-10 items-center">
+    <section className="bg-abyss rounded-t-xl px-6 sm:px-10 lg:px-12 pt-16 pb-12 grid md:grid-cols-2 grid-cols-1 gap-10 items-center">
       {/* Left — image + mini chart */}
-      <div className="rounded-xl overflow-hidden bg-base min-h-[360px] relative flex flex-col justify-end">
+      <div className="rounded-xl overflow-hidden bg-abyss min-h-[360px] relative flex flex-col justify-end">
         <picture>
           <source type="image/webp" srcSet="/assets/imgs/img3.webp" />
           <img
@@ -25,23 +25,17 @@ function Features() {
         </picture>
         {/* mini chart card overlay */}
         <div className="relative bg-white/50 backdrop-blur-sm shadow-md m-5 rounded-lg p-4">
-          <p className="text-xs font-medium text-base-dark mb-3">
+          <p className="text-xs font-medium text-abyss-dark mb-3">
             Program growth
           </p>
           <div className="flex items-end gap-2 h-14">
             {[30, 50, 72, 100].map((h, i) => (
               <div
                 key={i}
-                className="flex-1 rounded-t"
-                style={{
-                  height: `${h}%`,
-                  background:
-                    i === 0
-                      ? "var(--accent-light)"
-                      : i === 3
-                        ? "var(--base-dark)"
-                        : "var(--gold)",
-                }}
+                className={`flex-1 rounded-t ${
+                  i === 0 ? "bg-accent" : "bg-gold"
+                }`}
+                style={{ height: `${h}%` }}
               />
             ))}
           </div>
@@ -49,7 +43,7 @@ function Features() {
             {["2021", "2022", "2023", "2024"].map((y) => (
               <span
                 key={y}
-                className="flex-1 text-[10px] text-base-mid text-center"
+                className="flex-1 text-[10px] text-abyss text-center"
               >
                 {y}
               </span>
@@ -88,7 +82,7 @@ function Features() {
               <p className="text-sm cormorant text-accent-light uppercase tracking-wider mb-1">
                 {label}
               </p>
-              <p className="text-2xl font-medium text-accent">{value}</p>
+              <p className="text-2xl font-medium text-gold">{value}</p>
             </div>
           ))}
         </div>

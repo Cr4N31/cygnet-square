@@ -1,11 +1,11 @@
 function CTA() {
   return (
-    <section className="bg-base px-12 py-16 text-center" data-aos="fade-up">
+    <section className="bg-abyss px-12 py-16 text-center" data-aos="fade-up">
       <h2 className="text-4xl font-bold cormorant text-white mb-4">
         Want to <em className="italic text-gold">join our mission?</em>
       </h2>
 
-      <div className="w-10 h-px bg-gold-dark mx-auto mb-6" />
+      <div className="w-10 h-px bg-gold mx-auto mb-6" />
 
       <p className="text-sm text-accent-light opacity-75 leading-relaxed max-w-md mx-auto mb-8">
         Whether you want to volunteer, partner with us, or simply learn more —

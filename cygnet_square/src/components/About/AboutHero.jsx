@@ -3,13 +3,13 @@ function AboutHero() {
   return (
     <section className="bg-mist px-6 py-16 md:px-12" data-aos="fade-up">
       <div className="text-center max-w-2xl mx-auto mb-10">
-        <span className="text-[11px] tracking-widest uppercase text-gold font-medium border border-gold px-3.5 py-1 rounded-full inline-block mb-5">
+        <span className="text-[11px] tracking-widest uppercase text-accent font-medium border border-accent px-3.5 py-1 rounded-full inline-block mb-5">
           About Cygnet Square
         </span>
 
-        <h1 className="text-4xl font-semibold text-accent  tracking-tight mb-5">
-          We are building a <br />
-          <span className="text-accent">legacy of empowerment.</span>
+        <h1 className="text-4xl font-semibold text-accent tracking-tight mb-5">
+          Empowered women <br />
+          <span className="text-accent">inclusive communities.</span>
         </h1>
 
         <div className="w-10 h-px bg-gold mx-auto mb-6" />

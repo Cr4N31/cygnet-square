@@ -17,15 +17,12 @@ const socials = [FaInstagram, FaLinkedin, FaFacebookF];
 
 function Footer() {
   return (
-    <footer className="bg-base px-6 sm:px-10 lg:px-12 pt-16 pb-12">
+    <footer className="bg-abyss px-6 sm:px-10 lg:px-12 pt-16 pb-12">
       <div className="flex flex-col md:flex-row items-start md:items-center md:justify-between gap-12 pb-10">
         {/* Brand */}
         <div>
           <div className="flex items-center gap-2.5 mb-4">
             <img src={logo} alt="Cygnet Square Logo" className="w-24" />
-            <span className="text-base font-medium text-on-base tracking-tight">
-              Cygnet Square
-            </span>
           </div>
           <p className="text-xs text-accent-light opacity-60 leading-relaxed mb-6 max-w-[240px]">
             Empowered Women. Inclusive Communities. Building tools for social

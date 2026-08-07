@@ -7,10 +7,7 @@ const stats = [
 
 function WhyWeStarted() {
   return (
-    <section
-      className="bg-base px-6 sm:px-10 lg:px-12 pt-16 pb-12"
-      data-aos="fade-up"
-    >
+    <section className="px-6 sm:px-10 lg:px-12 pt-16 pb-12" data-aos="fade-up">
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 lg:grid-cols-[1.35fr_0.85fr] lg:items-start">
         <article className="rounded-[28px] border border-[#0C2E26]/10 bg-mist p-7 shadow-[0_18px_60px_-28px_rgba(8,64,89,0.35)] backdrop-blur-sm md:p-10">
           <div className="mb-5 flex items-center gap-3 text-[11px] font-medium uppercase tracking-[0.28em] text-gold-dark">
@@ -56,7 +53,7 @@ function WhyWeStarted() {
           </div>
         </article>
 
-        <aside className="rounded-[28px] bg-base p-5 text-white shadow-[0_18px_60px_-28px_rgba(8,64,89,0.55)] md:p-6">
+        <aside className="rounded-[28px] bg-abyss p-5 text-white shadow-[0_18px_60px_-28px_rgba(8,64,89,0.55)] md:p-6">
           <div className="mb-5 text-[11px] font-medium uppercase tracking-[0.28em] text-gold">
             Snapshot
           </div>

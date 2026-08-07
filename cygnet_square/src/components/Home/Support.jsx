@@ -22,7 +22,7 @@ const pillars = [
 function Support() {
   return (
     <section
-      className="bg-base px-6 sm:px-10 lg:px-12 pt-16 pb-12 grid md:grid-cols-2 grid-cols-1 gap-16 items-start"
+      className="bg-abyss px-6 sm:px-10 lg:px-12 pt-16 pb-12 grid md:grid-cols-2 grid-cols-1 gap-16 items-start"
       data-aos="fade-up"
     >
       {/* Left — heading + numbered list */}
@@ -36,7 +36,7 @@ function Support() {
           <span className="text-gold">women where they are.</span>
         </h2>
 
-        <div className="w-10 h-px bg-gold my-5" />
+        <div className="w-10 h-px bg-[#D4AF37] my-5" />
 
         <p className="text-lg text-white/60 leading-relaxed mb-10">
           We turn our mission into meaningful impact by focusing on three key
@@ -47,7 +47,7 @@ function Support() {
           {pillars.map(({ num, title, body }, i) => (
             <div
               key={num}
-              className={`py-5 flex gap-5 items-start border-t border-base-dark-10 ${
+              className={`py-5 flex gap-5 items-start border-t border-gold ${
                 i === pillars.length - 1 ? "border-b" : ""
               }`}
             >

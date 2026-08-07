@@ -13,7 +13,7 @@ function Events() {
     },
     {
       tag: "Panel",
-      bgColor: "bg-base",
+      bgColor: "bg-abyss",
       icon: Mic,
       title: "Women Leading Change: Voices from the Community",
       location: "Virtual Event",
@@ -32,7 +32,7 @@ function Events() {
   ];
 
   return (
-    <section className="bg-base px-6 sm:px-10 lg:px-12 pt-16 pb-12">
+    <section className="bg-abyss px-6 sm:px-10 lg:px-12 pt-16 pb-12">
       <div className="grid md:grid-cols-2 grid-cols-1 gap-10 items-center mb-10">
         <div className="flex flex-col gap-2">
           <span className="border border-gold rounded-full w-fit text-[11px] tracking-widest uppercase text-gold font-medium px-3 py-1">
@@ -56,7 +56,7 @@ function Events() {
           ({ tag, bgColor, icon: Icon, title, location, description }) => (
             <div
               key={title}
-              className="bg-accent-30 rounded-xl overflow-hidden border border-base-mid-25"
+              className="bg-white/20 border border-white/5 rounded-xl overflow-hidden border border-abyss"
             >
               {/* Card header — icon + pattern instead of image */}
               <div
@@ -67,7 +67,7 @@ function Events() {
                 <div className="absolute -bottom-8 -left-4 w-32 h-32 rounded-full bg-white/5" />
                 <div className="absolute top-4 left-8 w-12 h-12 rounded-full bg-white/5" />
 
-                <span className="absolute top-3 left-3 bg-white text-base-dark text-[11px] font-medium px-3 py-1 rounded-full z-10">
+                <span className="absolute top-3 left-3 bg-white text-abyss-dark text-[11px] font-medium px-3 py-1 rounded-full z-10">
                   {tag}
                 </span>
 
@@ -78,11 +78,11 @@ function Events() {
 
               <div className="p-4 group cursor-pointer transition-all duration-200 rounded-b-xl">
                 <div className="flex gap-3 items-start mb-3">
-                  <div className="bg-white group-hover:bg-base-dark transition-all duration-200 rounded-lg px-3 py-1.5 text-center min-w-[44px]">
-                    <p className="text-[9px] uppercase text-base-mid group-hover:text-accent-light tracking-wider m-0 transition-colors duration-200">
+                  <div className="bg-white transition-all duration-200 rounded-lg px-3 py-1.5 text-center min-w-[44px]">
+                    <p className="text-[9px] uppercase text-abyss tracking-wider m-0">
                       Date
                     </p>
-                    <p className="text-sm font-medium text-base-dark group-hover:text-on-base m-0 transition-colors duration-200">
+                    <p className="text-sm font-medium text-abyss-dark  m-0 transition-colors duration-200">
                       TBA
                     </p>
                   </div>
@@ -90,12 +90,12 @@ function Events() {
                     <h3 className="text-sm font-bold cormorant text-gold leading-snug mb-1">
                       {title}
                     </h3>
-                    <p className="text-xs text-muted flex items-center gap-1">
+                    <p className="text-xs text-muted text-white/60 flex items-center gap-1">
                       <MapPin className="w-3 h-3" /> {location}
                     </p>
                   </div>
                 </div>
-                <p className="text-xs text-muted leading-relaxed">
+                <p className="text-xs text-white text-muted leading-relaxed">
                   {description}
                 </p>
               </div>

@@ -33,7 +33,7 @@ function Contact() {
     >
       {/* Left — info */}
       <div>
-        <span className="text-[11px] tracking-widest uppercase text-gold font-medium border border-gold px-3 py-1 rounded-full">
+        <span className="text-[11px] tracking-widest uppercase text-accent font-medium border border-accent px-3 py-1 rounded-full">
           Get in touch
         </span>
 
@@ -49,10 +49,12 @@ function Contact() {
         <div className="flex flex-col gap-5">
           <div className="flex gap-3.5 items-start">
             <div className="bg-accent rounded-xl p-2.5 flex-shrink-0">
-              <Mail className="w-4.5 h-4.5 text-base-dark" />
+              <Mail className="w-4.5 h-4.5 text-mist" />
             </div>
             <div>
-              <p className="text-sm font-semibold text-gold mb-0.5">Email Us</p>
+              <p className="text-sm font-semibold text-accent mb-0.5">
+                Email Us
+              </p>
               <p className="text-sm text-base leading-relaxed">
                 <a
                   href="mailto:cygnetsquare@gmail.com"
@@ -66,10 +68,12 @@ function Contact() {
 
           <div className="flex gap-3.5 items-start">
             <div className="bg-accent rounded-xl p-2.5 flex-shrink-0">
-              <MapPin className="w-4.5 h-4.5 text-base-dark" />
+              <MapPin className="w-4.5 h-4.5 text-mist" />
             </div>
             <div>
-              <p className="text-sm font-semibold text-gold mb-0.5">Visit Us</p>
+              <p className="text-sm font-semibold text-accent mb-0.5">
+                Visit Us
+              </p>
               <p className="text-sm text-base leading-relaxed">
                 Montreal, Quebec.
               </p>
@@ -79,11 +83,11 @@ function Contact() {
       </div>
 
       {/* Right — form */}
-      <div className="bg-accent/60 rounded-2xl p-8">
+      <div className="bg-mist rounded-2xl p-8">
         <form onSubmit={handleSubmit}>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 mb-3.5">
             <div>
-              <label className="text-sm font-medium text-gold block mb-1.5">
+              <label className="text-sm font-medium text-accent block mb-1.5">
                 Full Name
               </label>
               <input
@@ -91,11 +95,11 @@ function Contact() {
                 placeholder="Jane Doe"
                 value={formData.name}
                 onChange={handleChange("name")}
-                className="w-full bg-white border border-base-dark-10 rounded-lg px-3.5 py-2.5 text-sm text-base-dark placeholder:text-gray-400 outline-none focus:border-gold"
+                className="w-full bg-white rounded-lg px-3.5 py-2.5 text-sm text-abyss-dark border border-accent placeholder:text-gray-400 outline-none focus:border-gold"
               />
             </div>
             <div>
-              <label className="text-sm font-medium text-gold block mb-1.5">
+              <label className="text-sm font-medium text-accent block mb-1.5">
                 Email Address
               </label>
               <input
@@ -103,20 +107,20 @@ function Contact() {
                 placeholder="jane@example.com"
                 value={formData.email}
                 onChange={handleChange("email")}
-                className="w-full bg-white border border-base-dark-10 rounded-lg px-3.5 py-2.5 text-sm text-base-dark placeholder:text-gray-400 outline-none focus:border-gold"
+                className="w-full bg-white rounded-lg px-3.5 py-2.5 text-sm text-abyss-dark border border-accent placeholder:text-gray-400 outline-none focus:border-gold"
               />
             </div>
           </div>
 
           <div className="mb-3.5">
-            <label className="text-sm font-medium text-gold block mb-1.5">
+            <label className="text-sm font-medium text-accent block mb-1.5">
               Subject
             </label>
             <div className="relative">
               <select
                 value={formData.subject}
                 onChange={handleChange("subject")}
-                className="w-full bg-white border border-base-dark-10 rounded-lg px-3.5 py-2.5 text-sm text-base-dark outline-none focus:border-gold appearance-none pr-10 cursor-pointer"
+                className="w-full bg-white rounded-lg px-3.5 py-2.5 text-sm text-abyss-dark border border-accent outline-none focus:border-gold appearance-none pr-10 cursor-pointer"
               >
                 {subjectOptions.map((option) => (
                   <option key={option} value={option}>
@@ -129,7 +133,7 @@ function Contact() {
           </div>
 
           <div className="mb-4.5">
-            <label className="text-sm font-medium text-gold block mb-1.5">
+            <label className="text-sm font-medium text-accent block mb-1.5">
               Message
             </label>
             <textarea
@@ -137,13 +141,13 @@ function Contact() {
               value={formData.message}
               onChange={handleChange("message")}
               rows={4}
-              className="w-full bg-white border border-base-dark-10 rounded-lg px-3.5 py-2.5 text-sm text-base-dark placeholder:text-gray-400 outline-none focus:border-gold resize-none"
+              className="w-full bg-white rounded-lg px-3.5 py-2.5 text-sm text-abyss-dark border border-accent placeholder:text-gray-400 outline-none focus:border-gold resize-none"
             />
           </div>
 
           <a
             href={`mailto:cygnetsquare@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent("Name: " + formData.name + "\nEmail: " + formData.email + "\n\n" + formData.message)}`}
-            className="w-full bg-base text-on-base text-sm font-medium py-3 rounded-lg flex items-center justify-center gap-2 hover:bg-base-mid duration-300 transition-colors"
+            className="w-full bg-abyss text-on-base text-sm font-medium py-3 rounded-lg flex items-center justify-center gap-2 hover:bg-base-mid duration-300 transition-colors"
           >
             Send Message <Send className="w-4 h-4" />
           </a>

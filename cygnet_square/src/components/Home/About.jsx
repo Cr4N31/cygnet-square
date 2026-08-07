@@ -4,7 +4,7 @@ import { Globe, Users, TrendingUp, ArrowRight, Heart } from "lucide-react";
 const pillars = [
   {
     icon: Globe,
-    bgColor: "bg-base",
+    bgColor: "bg-abyss",
     title: "Networking & Connection.",
     body: "We create opportunities for women to build meaningful relationships through mentorship programs, peer support circles, and community meetups that foster trust, collaboration, and personal growth.",
   },
@@ -27,13 +27,12 @@ function About() {
     <section className="bg-mist px-6 sm:px-10 lg:px-12 pt-16 pb-12 gap-12 items-center">
       {/* Left — copy */}
       <div>
-        <span className="text-[11px] tracking-widest uppercase text-[#D4AF37] font-medium border border-[#D4AF37] px-3 py-1 rounded-full">
+        <span className="text-[11px] tracking-widest uppercase text-accent font-medium border border-accent px-3 py-1 rounded-full">
           Who we are
         </span>
 
-        <h2 className="text-4xl font-medium text-gold leading-tight tracking-tight mt-4 mb-5">
-          Inclusive by design,{" "}
-          <span className="text-[#D4AF37]">not by chance.</span>
+        <h2 className="text-4xl font-medium text-accent leading-tight tracking-tight mt-4 mb-5">
+          Inclusive by design, <span>not by chance.</span>
         </h2>
 
         {/* Right — image + floating badges */}
@@ -42,12 +41,12 @@ function About() {
             <img
               src={right_img}
               alt="Cygnet Square community"
-              className="w-full h-full object-cover"
+              className="w-full h-[400px] object-cover"
             />
           </div>
 
           {/* Top-right badge */}
-          <div className="absolute top-5 -right-4 bg-base text-white rounded-xl px-4 py-2.5 hover:px-5 hover:py-3 transition-all duration-250 text-center shadow-lg">
+          <div className="absolute top-5 -right-4 bg-abyss text-white rounded-xl px-4 py-2.5 hover:px-5 hover:py-3 transition-all duration-250 text-center shadow-lg">
             <p className="text-xl font-semibold leading-none">500+</p>
             <p className="text-[10px] opacity-75 tracking-wide mt-1">
               Lives impacted
@@ -124,7 +123,7 @@ function About() {
 
         <a
           href="/about"
-          className="inline-flex items-center gap-2 bg-accent hover:bg-base-dark transition-all duration-250 text-white text-sm font-medium m-4 px-6 py-3 rounded-lg"
+          className="inline-flex items-center gap-2 bg-abyss hover:bg-accent transition-all duration-250 text-white text-sm font-medium m-4 px-6 py-3 rounded-lg"
         >
           Learn more about us <ArrowRight className="w-4 h-4" />
         </a>
