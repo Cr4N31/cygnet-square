@@ -30,7 +30,7 @@ function TeamSection() {
       data-aos="fade-up"
     >
       <div className="text-center max-w-xl mx-auto mb-12">
-        <span className="text-[11px] tracking-widest uppercase text-gold font-medium border border-gold px-3.5 py-1.5 rounded-full inline-flex items-center gap-1.5 mb-5">
+        <span className="text-[11px] tracking-widest uppercase text-accent font-medium border border-accent px-3.5 py-1.5 rounded-full inline-flex items-center gap-1.5 mb-5">
           <Heart className="w-3.5 h-3.5" /> Our Leadership
         </span>
 
