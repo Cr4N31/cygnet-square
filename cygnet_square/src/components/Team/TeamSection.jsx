@@ -39,7 +39,7 @@ function TeamSection() {
           <span>behind the mission.</span>
         </h2>
 
-        <div className="w-10 h-px bg-gold-dark mx-auto mb-6" />
+        <div className="w-10 h-px bg-gold mx-auto mb-6" />
 
         <p className="text-lg text-abyss/70 leading-relaxed">
           Cygnet Square is led by people who believe that empowering women
