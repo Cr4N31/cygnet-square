@@ -45,14 +45,6 @@ function About() {
             />
           </div>
 
-          {/* Top-right badge */}
-          <div className="absolute top-5 -right-4 bg-abyss text-white rounded-xl px-4 py-2.5 hover:px-5 hover:py-3 transition-all duration-250 text-center shadow-lg">
-            <p className="text-xl font-semibold leading-none">500+</p>
-            <p className="text-[10px] opacity-75 tracking-wide mt-1">
-              Lives impacted
-            </p>
-          </div>
-
           {/* Bottom-left badge */}
           <div className="absolute bottom-6 -left-4 bg-white/50 backdrop-blur-sm rounded-xl px-4 py-2.5 flex items-center gap-3 shadow-lg">
             <div className="bg-[#E0F2F1] rounded-full p-2">
@@ -62,7 +54,7 @@ function About() {
               <p className="text-[10px] text-gray-900 tracking-wide">
                 Community-driven
               </p>
-              <p className="text-sm font-semibold text-[#0C2E3A]">Since 2020</p>
+              <p className="text-sm font-semibold text-[#0C2E3A]">Since 2024</p>
             </div>
           </div>
         </div>

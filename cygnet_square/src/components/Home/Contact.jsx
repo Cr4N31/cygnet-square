@@ -75,7 +75,7 @@ function Contact() {
                 Visit Us
               </p>
               <p className="text-sm text-base leading-relaxed">
-                Montreal, Quebec.
+                Suite 4, 6970 avenue de Monts Montreal, Quebec
               </p>
             </div>
           </div>
@@ -95,7 +95,7 @@ function Contact() {
                 placeholder="Jane Doe"
                 value={formData.name}
                 onChange={handleChange("name")}
-                className="w-full bg-white rounded-lg px-3.5 py-2.5 text-sm text-abyss-dark border border-accent placeholder:text-gray-400 outline-none focus:border-gold"
+                className="w-full bg-white rounded-lg px-3.5 py-2.5 text-sm text-accent-dark border border-accent placeholder:text-gray-400 outline-none focus:border-accent"
               />
             </div>
             <div>
@@ -107,7 +107,7 @@ function Contact() {
                 placeholder="jane@example.com"
                 value={formData.email}
                 onChange={handleChange("email")}
-                className="w-full bg-white rounded-lg px-3.5 py-2.5 text-sm text-abyss-dark border border-accent placeholder:text-gray-400 outline-none focus:border-gold"
+                className="w-full bg-white rounded-lg px-3.5 py-2.5 text-sm text-accent-dark border border-accent placeholder:text-gray-400 outline-none focus:border-accent"
               />
             </div>
           </div>
@@ -120,7 +120,7 @@ function Contact() {
               <select
                 value={formData.subject}
                 onChange={handleChange("subject")}
-                className="w-full bg-white rounded-lg px-3.5 py-2.5 text-sm text-abyss-dark border border-accent outline-none focus:border-gold appearance-none pr-10 cursor-pointer"
+                className="w-full bg-white rounded-lg px-3.5 py-2.5 text-sm text-accent-dark border border-accent outline-none focus:border-accent appearance-none pr-10 cursor-pointer"
               >
                 {subjectOptions.map((option) => (
                   <option key={option} value={option}>
@@ -141,7 +141,7 @@ function Contact() {
               value={formData.message}
               onChange={handleChange("message")}
               rows={4}
-              className="w-full bg-white rounded-lg px-3.5 py-2.5 text-sm text-abyss-dark border border-accent placeholder:text-gray-400 outline-none focus:border-gold resize-none"
+              className="w-full bg-white rounded-lg px-3.5 py-2.5 text-sm text-accent-dark border border-accent placeholder:text-gray-400 outline-none focus:border-accent resize-none"
             />
           </div>
 

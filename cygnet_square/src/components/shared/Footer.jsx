@@ -91,7 +91,7 @@ function Footer() {
 
         {/* Programs */}
         <div>
-          <p className="text-[11px] tracking-widest uppercase text-gold font-medium mb-5">
+          <p className="text-[11px] tracking-widest uppercase text-accent font-medium mb-5">
             Programs
           </p>
           <div className="flex flex-col gap-2.5">
@@ -109,7 +109,7 @@ function Footer() {
 
         {/* Supported by */}
         <div className="w-full md:max-w-[420px]">
-          <p className="text-[11px] tracking-widest uppercase text-gold font-medium mb-4">
+          <p className="text-[11px] tracking-widest uppercase text-accent font-medium mb-4">
             Supported by
           </p>
           <div className="flex flex-wrap gap-3">

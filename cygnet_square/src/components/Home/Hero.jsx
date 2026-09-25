@@ -38,7 +38,7 @@ function Hero() {
           cx="180"
           cy="180"
           r="179"
-          stroke="#D4AF37"
+          stroke="#084059"
           strokeOpacity="0.7"
           strokeWidth="1.5"
         />
@@ -74,7 +74,7 @@ function Hero() {
           cx="110"
           cy="210"
           r="58"
-          stroke="#D4AF37"
+          stroke="#084059"
           strokeOpacity="0.5"
           strokeWidth="1.5"
         />
@@ -85,7 +85,7 @@ function Hero() {
         className="relative z-10 flex flex-col justify-center items-center text-center px-4 pt-20 pb-16 max-w-4xl mx-auto"
         data-aos="fade-up"
       >
-        <span className="text-lg dm-sans tracking-widest uppercase text-gold font-medium">
+        <span className="text-lg dm-sans tracking-widest uppercase text-accent font-medium">
           Inclusive · Resourceful · Resilient
         </span>
 
@@ -115,7 +115,7 @@ function Hero() {
           </a>
           <a
             href="/about"
-            className="bg-mist text-abyss transition-all duration-200 text-sm font-medium px-6 py-3 rounded-full"
+            className="bg-mist text-accent transition-all duration-200 text-sm font-medium px-6 py-3 rounded-full"
           >
             Learn more
           </a>
@@ -136,22 +136,22 @@ function Hero() {
       {/* Stats row */}
       <div className="relative z-10 flex flex-col md:flex-row gap-6 md:gap-10 mt-12 pt-8 pb-16 border-t border-accent flex-wrap justify-center max-w-4xl mx-auto px-4">
         <div className="text-center">
-          <p className="text-4xl font-medium text-[#0C2E3A]">500+</p>
-          <p className="text-sm text-gold uppercase tracking-widest mt-1">
+          <p className="text-4xl font-medium text-[#0C2E3A]">100+</p>
+          <p className="text-sm text-accent uppercase tracking-widest mt-1">
             Active participants
           </p>
         </div>
         <div className="w-px hidden md:block bg-base-mid-25" />
         <div className="text-center">
           <p className="text-4xl font-medium text-[#0C2E3A]">BIPOC</p>
-          <p className="text-sm text-gold uppercase tracking-widest mt-1">
+          <p className="text-sm text-accent uppercase tracking-widest mt-1">
             Women centered
           </p>
         </div>
         <div className="w-px hidden md:block bg-base-mid-25" />
         <div className="text-center">
           <p className="text-4xl font-medium text-[#0C2E3A]">3 Pillars</p>
-          <p className="text-sm text-gold uppercase tracking-widest mt-1">
+          <p className="text-sm text-accent uppercase tracking-widest mt-1">
             Network · Learn · Access
           </p>
         </div>

@@ -7,7 +7,7 @@ function Events() {
       bgColor: "bg-accent",
       icon: Users,
       title: "Digital Skills for Newcomer Women",
-      location: "Toronto, ON",
+      location: "Montreal, QC",
       description:
         "A hands-on session covering essential digital tools, online safety, and navigating government services online...",
     },
@@ -25,7 +25,7 @@ function Events() {
       bgColor: "bg-gold",
       icon: Handshake,
       title: "Community Mixer & Inclusive Networking Night",
-      location: "Cygnet Square Hub",
+      location: "Montreal, QC",
       description:
         "An evening celebrating community connection — meet mentors, peers, and allies committed to inclusive growth...",
     },
@@ -35,12 +35,12 @@ function Events() {
     <section className="bg-abyss px-6 sm:px-10 lg:px-12 pt-16 pb-12">
       <div className="grid md:grid-cols-2 grid-cols-1 gap-10 items-center mb-10">
         <div className="flex flex-col gap-2">
-          <span className="border border-gold rounded-full w-fit text-[11px] tracking-widest uppercase text-gold font-medium px-3 py-1">
+          <span className="border border-accent rounded-full w-fit text-[11px] tracking-widest uppercase text-accent font-medium px-3 py-1">
             Cygnet Events
           </span>
-          <h2 className="text-4xl font-medium text-gold leading-snug tracking-tight">
+          <h2 className="text-4xl font-medium text-accent leading-snug tracking-tight">
             Empowering women through{" "}
-            <span className="text-gold">capacity-building events</span>
+            <span className="text-accent">capacity-building events</span>
           </h2>
           <p className="text-lg text-white/60 leading-relaxed">
             We create opportunities for women to build meaningful relationships
@@ -56,7 +56,7 @@ function Events() {
           ({ tag, bgColor, icon: Icon, title, location, description }) => (
             <div
               key={title}
-              className="bg-white/20 border border-white/5 rounded-xl overflow-hidden border border-abyss"
+              className="bg-white/20 border border-white/5 rounded-xl overflow-hidden border border-accent"
             >
               {/* Card header — icon + pattern instead of image */}
               <div
@@ -67,7 +67,7 @@ function Events() {
                 <div className="absolute -bottom-8 -left-4 w-32 h-32 rounded-full bg-white/5" />
                 <div className="absolute top-4 left-8 w-12 h-12 rounded-full bg-white/5" />
 
-                <span className="absolute top-3 left-3 bg-white text-abyss-dark text-[11px] font-medium px-3 py-1 rounded-full z-10">
+                <span className="absolute top-3 left-3 bg-white text-accent-dark text-[11px] font-medium px-3 py-1 rounded-full z-10">
                   {tag}
                 </span>
 
@@ -82,12 +82,12 @@ function Events() {
                     <p className="text-[9px] uppercase text-abyss tracking-wider m-0">
                       Date
                     </p>
-                    <p className="text-sm font-medium text-abyss-dark  m-0 transition-colors duration-200">
+                    <p className="text-sm font-medium text-accent-dark  m-0 transition-colors duration-200">
                       TBA
                     </p>
                   </div>
                   <div>
-                    <h3 className="text-sm font-bold cormorant text-gold leading-snug mb-1">
+                    <h3 className="text-sm font-bold cormorant text-white leading-snug mb-1">
                       {title}
                     </h3>
                     <p className="text-xs text-muted text-white/60 flex items-center gap-1">
@@ -95,7 +95,7 @@ function Events() {
                     </p>
                   </div>
                 </div>
-                <p className="text-xs text-white text-muted leading-relaxed">
+                <p className="text-xs text-white/50 text-muted leading-relaxed">
                   {description}
                 </p>
               </div>

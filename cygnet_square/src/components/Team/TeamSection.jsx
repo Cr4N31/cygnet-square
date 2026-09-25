@@ -1,27 +1,33 @@
-import { Heart, UserCircle, Mail } from "lucide-react";
-import maleUser from "/assets/userImgs/maleUser.jpg";
-import femaleUser from "/assets/userImgs/femaleUser.jpg";
+import { Heart, Mail } from "lucide-react";
 
 const team = [
   {
     name: "Maryam Mohammed",
     role: "Founder / Director",
-    img: femaleUser,
     bio: "A passionate advocate for women's empowerment and community inclusion. With a deep commitment to breaking systemic barriers, Maryam founded Cygnet Square to ensure that every woman — regardless of background or circumstance — has access to the networks, skills, and resources she needs to thrive.",
     quote:
       '"Every woman deserves a safe community, a seat at the table, and the tools to build the life she envisions."',
     tags: ["Inclusive Networking", "Community Strategy", "Women Empowerment"],
   },
   {
-    name: "Ghaffar AbdulAziz",
+    name: "Sherifat Ogede",
     role: "Director",
-    img: maleUser,
     bio: "A dedicated community builder with a focus on creating culturally sensitive programs that celebrate diversity. Ghaffar brings expertise in organizational development, partnership building, and capacity-building initiatives that drive long-term social and economic impact.",
     quote:
       '"When we invest in women and welcome all voices with dignity, we build a community that lifts everyone."',
     tags: ["Capacity Building", "Partnership Development", "Program Design"],
   },
 ];
+
+// Deterministic initials, e.g. "Maryam Mohammed" -> "MM"
+function getInitials(fullName) {
+  return fullName
+    .split(" ")
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((part) => part[0].toUpperCase())
+    .join("");
+}
 
 function TeamSection() {
   return (
@@ -49,42 +55,39 @@ function TeamSection() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {team.map(({ name, role, bio, quote, tags, img }) => (
+        {team.map(({ name, role, bio, quote, tags }) => (
           <div
             key={name}
-            className="overflow-hidden rounded-2xl border border-abyss/20 bg-white/[0.06]"
+            className="overflow-hidden rounded-2xl border border-accent/20 bg-white/[0.06]"
           >
-            <div className="bg-accent h-96 overflow-hidden">
-              <img
-                src={img}
-                alt={name}
-                className="h-full w-full object-cover object-top"
-                loading="lazy"
-              />
+            <div className="bg-accent h-96 flex items-center justify-center">
+              <div className="flex h-28 w-28 items-center justify-center rounded-full bg-white/15 text-3xl font-semibold tracking-wide text-white">
+                {getInitials(name)}
+              </div>
             </div>
 
             <div className="p-6">
               <p className="text-lg font-semibold text-accent mb-1">{name}</p>
-              <p className="text-sm text-abyss font-medium mb-4">{role}</p>
+              <p className="text-sm text-accent font-medium mb-4">{role}</p>
 
-              <p className="text-sm text-abyss/70 leading-relaxed mb-6">
+              <p className="text-sm text-black/70 leading-relaxed mb-6">
                 {bio}
               </p>
 
-              <div className="bg-mist border-l-[2.5px] border-gold rounded-r-lg px-4 py-3 mb-6">
-                <p className="text-sm italic text-abyss/70 leading-relaxed">
+              <div className="bg-mist border-l-[2.5px] border-accent rounded-r-lg px-4 py-3 mb-6">
+                <p className="text-sm italic text-accent/70 leading-relaxed">
                   {quote}
                 </p>
               </div>
 
-              <p className="text-[10px] tracking-widest uppercase text-abyss/40 mb-2">
+              <p className="text-[10px] tracking-widest uppercase text-black/40 mb-2">
                 Areas of focus
               </p>
               <div className="flex gap-1.5 flex-wrap mb-6">
                 {tags.map((tag) => (
                   <span
                     key={tag}
-                    className="bg-accent/10 border border-accent/30 text-abyss/70 text-xs font-medium px-3.5 py-1.5 rounded-full"
+                    className="bg-accent/10 border border-accent/30 text-accent/70 text-xs font-medium px-3.5 py-1.5 rounded-full"
                   >
                     {tag}
                   </span>

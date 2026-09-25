@@ -14,8 +14,8 @@ function Header() {
 
   const desktopLink = ({ isActive }) =>
     `relative pb-1 font-medium transition-colors text-sm ${
-      isActive ? "text-accent" : "text-gold hover:text-accent"
-    } after:absolute after:left-0 after:bottom-0 after:h-[1.5px] after:bg-accent after:transition-all after:duration-300 ${
+      isActive ? "text-abyss" : "text-accent hover:text-abyss"
+    } after:absolute after:left-0 after:bottom-0 after:h-[1.5px] after:bg-abyss after:transition-all after:duration-300 ${
       isActive ? "after:w-full" : "after:w-0 hover:after:w-full"
     }`;
 
@@ -101,7 +101,7 @@ function Header() {
           {/* Content */}
 
           <div className="flex-1 flex flex-col justify-center px-8">
-            <p className="uppercase tracking-[0.4em] text-xs text-gold mb-12">
+            <p className="uppercase tracking-[0.4em] text-xs text-accent mb-12">
               Navigation
             </p>
 
@@ -127,11 +127,11 @@ function Header() {
                         `group inline-flex items-center gap-4 text-5xl font-serif tracking-wide transition-all duration-300 ${
                           isActive
                             ? "text-accent"
-                            : "text-gold hover:text-accent"
+                            : "text-accent hover:text-accent"
                         }`
                       }
                     >
-                      <span className="text-base text-gold/40">
+                      <span className="text-base text-accent/40">
                         0{index + 1}
                       </span>
 
@@ -146,8 +146,8 @@ function Header() {
           {/* Footer */}
 
           <div className="px-8 pb-10">
-            <div className="border-t border-gold-dark pt-8">
-              <div className="flex justify-between uppercase tracking-[0.25em] text-[11px] text-gold">
+            <div className="border-t border-accent-dark pt-8">
+              <div className="flex justify-between uppercase tracking-[0.25em] text-[11px] text-accent">
                 <a href="#" className="hover:text-accent transition">
                   Instagram
                 </a>
@@ -161,7 +161,7 @@ function Header() {
                 </a>
               </div>
 
-              <p className="mt-8 text-[10px] tracking-[0.35em] text-gold/50 uppercase">
+              <p className="mt-8 text-[10px] tracking-[0.35em] text-accent/50 uppercase">
                 © 2026 Cygnet Initiative
               </p>
             </div>
