@@ -15,6 +15,55 @@ const programs = [
 ];
 const socials = [FaInstagram, FaLinkedin, FaFacebookF];
 
+function Flag({ type }) {
+  if (type === "quebec") {
+    return (
+      <svg
+        viewBox="0 0 28 18"
+        className="h-5 w-7 rounded-sm overflow-hidden"
+        aria-label="Quebec flag"
+      >
+        <rect width="28" height="18" fill="#0b3c8c" />
+        <rect x="0" y="6.25" width="28" height="5.5" fill="#ffffff" />
+        <rect x="11.25" y="0" width="5.5" height="18" fill="#ffffff" />
+        <rect x="13.25" y="0" width="1.5" height="18" fill="#d72638" />
+        <rect x="0" y="8.5" width="28" height="1.5" fill="#d72638" />
+      </svg>
+    );
+  }
+
+  if (type === "canada") {
+    return (
+      <svg
+        viewBox="0 0 28 18"
+        className="h-5 w-7 rounded-sm overflow-hidden"
+        aria-label="Canada flag"
+      >
+        <rect width="28" height="18" fill="#ffffff" />
+        <rect width="7" height="18" fill="#d52b1e" />
+        <rect x="21" width="7" height="18" fill="#d52b1e" />
+        <rect x="7" width="14" height="18" fill="#ffffff" />
+        <path
+          d="M14 3.2L15.1 6.3L18.4 6.3L15.8 8.3L16.9 11.4L14 9.4L11.1 11.4L12.2 8.3L9.6 6.3L12.9 6.3L14 3.2Z"
+          fill="#d52b1e"
+        />
+      </svg>
+    );
+  }
+
+  return (
+    <div className="flex h-5 w-7 items-center justify-center rounded-sm bg-[#F4E9C7] text-[8px] font-bold text-[#16314D]">
+      CIA
+    </div>
+  );
+}
+
+const supportItems = [
+  { label: "Government of Quebec", type: "quebec" },
+  { label: "Government of Canada", type: "canada" },
+  { label: "Canadian Imperial Advantage", type: "cia" },
+];
+
 function Footer() {
   return (
     <footer className="bg-abyss px-6 sm:px-10 lg:px-12 pt-16 pb-12">
@@ -54,6 +103,26 @@ function Footer() {
               >
                 {program}
               </a>
+            ))}
+          </div>
+        </div>
+
+        {/* Supported by */}
+        <div className="w-full md:max-w-[420px]">
+          <p className="text-[11px] tracking-widest uppercase text-gold font-medium mb-4">
+            Supported by
+          </p>
+          <div className="flex flex-wrap gap-3">
+            {supportItems.map((item) => (
+              <div
+                key={item.label}
+                className="flex items-center gap-2.5 rounded-full border border-white/10 bg-white/[0.03] px-3 py-2"
+              >
+                <Flag type={item.type} />
+                <span className="text-xs text-accent-light opacity-80 whitespace-nowrap">
+                  {item.label}
+                </span>
+              </div>
             ))}
           </div>
         </div>
