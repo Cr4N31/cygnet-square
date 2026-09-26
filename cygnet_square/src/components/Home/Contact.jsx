@@ -75,7 +75,7 @@ function Contact() {
                 Visit Us
               </p>
               <p className="text-sm text-base leading-relaxed">
-                Suite 4, 6970 avenue de Monts Montreal, Quebec
+                Montreal, Quebec
               </p>
             </div>
           </div>

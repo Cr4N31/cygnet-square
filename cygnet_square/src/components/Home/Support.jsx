@@ -77,7 +77,7 @@ function Support() {
             <div className="w-2 h-2 rounded-full bg-accent" />
             <div>
               <p className="text-sm font-medium text-base-dark leading-tight">
-                Supporting 150+ women
+                Supporting 100+ women
               </p>
               <p className="text-[10px] text-base-mid tracking-wide mt-0.5">
                 Across communities

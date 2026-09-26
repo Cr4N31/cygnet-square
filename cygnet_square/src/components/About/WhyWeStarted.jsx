@@ -1,6 +1,6 @@
 const stats = [
   { value: "2024", label: "Founded", accent: true },
-  { value: "150+", label: "Women supported", accent: false },
+  { value: "100+", label: "Women supported", accent: false },
   { value: "3", label: "Core pillars", accent: false },
   { value: "∞", label: "Connections made", accent: true },
 ];
