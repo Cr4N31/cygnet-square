@@ -1,15 +1,17 @@
 import { MapPin, Users, Mic, Handshake } from "lucide-react";
+import { Link } from "react-router-dom";
 
 function Events() {
   const events = [
     {
-      tag: "Workshop",
+      tag: "Project",
       bgColor: "bg-accent",
       icon: Users,
-      title: "Digital Skills for Newcomer Women",
-      location: "Montreal, QC",
+      title: " Not Too Old: Thrive at Every Age",
+      location: "Montreal, QC & Online",
       description:
-        "A hands-on session covering essential digital tools, online safety, and navigating government services online...",
+        "Gentle exercise, yoga, mindfulness, and social activities helping senior women stay active, healthy, and connected at every age.",
+      href: "/events/not-too-old",
     },
     {
       tag: "Panel",
@@ -32,7 +34,10 @@ function Events() {
   ];
 
   return (
-    <section className="bg-abyss px-6 sm:px-10 lg:px-12 pt-16 pb-12">
+    <section
+      id="events"
+      className="bg-abyss px-6 sm:px-10 lg:px-12 pt-16 pb-12"
+    >
       <div className="grid md:grid-cols-2 grid-cols-1 gap-10 items-center mb-10">
         <div className="flex flex-col gap-2">
           <span className="border border-accent rounded-full w-fit text-[11px] tracking-widest uppercase text-accent font-medium px-3 py-1">
@@ -53,54 +58,74 @@ function Events() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4" data-aos="fade-up">
         {events.map(
-          ({ tag, bgColor, icon: Icon, title, location, description }) => (
-            <div
-              key={title}
-              className="bg-white/20 border border-white/5 rounded-xl overflow-hidden border border-accent"
-            >
-              {/* Card header — icon + pattern instead of image */}
-              <div
-                className={`${bgColor} h-40 relative flex flex-col items-center justify-center gap-3 overflow-hidden`}
+          ({
+            tag,
+            bgColor,
+            icon: Icon,
+            title,
+            location,
+            description,
+            href,
+          }) => {
+            const Card = href ? Link : "div";
+
+            return (
+              <Card
+                key={title}
+                to={href}
+                aria-label={
+                  href ? `Learn more about ${title.trim()}` : undefined
+                }
+                className={`bg-white/20 border border-white/5 rounded-xl overflow-hidden border-accent ${
+                  href
+                    ? "block border hover:-translate-y-1 hover:border-accent focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent transition-transform duration-300"
+                    : "border"
+                }`}
               >
-                {/* decorative circles pattern */}
-                <div className="absolute -top-6 -right-6 w-24 h-24 rounded-full bg-white/5" />
-                <div className="absolute -bottom-8 -left-4 w-32 h-32 rounded-full bg-white/5" />
-                <div className="absolute top-4 left-8 w-12 h-12 rounded-full bg-white/5" />
+                {/* Card header — icon + pattern instead of image */}
+                <div
+                  className={`${bgColor} h-40 relative flex flex-col items-center justify-center gap-3 overflow-hidden`}
+                >
+                  {/* decorative circles pattern */}
+                  <div className="absolute -top-6 -right-6 w-24 h-24 rounded-full bg-white/5" />
+                  <div className="absolute -bottom-8 -left-4 w-32 h-32 rounded-full bg-white/5" />
+                  <div className="absolute top-4 left-8 w-12 h-12 rounded-full bg-white/5" />
 
-                <span className="absolute top-3 left-3 bg-white text-accent-dark text-[11px] font-medium px-3 py-1 rounded-full z-10">
-                  {tag}
-                </span>
+                  <span className="absolute top-3 left-3 bg-white text-accent-dark text-[11px] font-medium px-3 py-1 rounded-full z-10">
+                    {tag}
+                  </span>
 
-                <div className="w-14 h-14 rounded-full bg-white/10 flex items-center justify-center z-10">
-                  <Icon className="w-6 h-6 text-white/80" strokeWidth={1.5} />
-                </div>
-              </div>
-
-              <div className="p-4 group cursor-pointer transition-all duration-200 rounded-b-xl">
-                <div className="flex gap-3 items-start mb-3">
-                  <div className="bg-white transition-all duration-200 rounded-lg px-3 py-1.5 text-center min-w-[44px]">
-                    <p className="text-[9px] uppercase text-abyss tracking-wider m-0">
-                      Date
-                    </p>
-                    <p className="text-sm font-medium text-accent-dark  m-0 transition-colors duration-200">
-                      TBA
-                    </p>
-                  </div>
-                  <div>
-                    <h3 className="text-sm font-bold cormorant text-white leading-snug mb-1">
-                      {title}
-                    </h3>
-                    <p className="text-xs text-muted text-white/60 flex items-center gap-1">
-                      <MapPin className="w-3 h-3" /> {location}
-                    </p>
+                  <div className="w-14 h-14 rounded-full bg-white/10 flex items-center justify-center z-10">
+                    <Icon className="w-6 h-6 text-white/80" strokeWidth={1.5} />
                   </div>
                 </div>
-                <p className="text-xs text-white/50 text-muted leading-relaxed">
-                  {description}
-                </p>
-              </div>
-            </div>
-          ),
+
+                <div className="p-4 group cursor-pointer transition-all duration-200 rounded-b-xl">
+                  <div className="flex gap-3 items-start mb-3">
+                    <div className="bg-white transition-all duration-200 rounded-lg px-3 py-1.5 text-center min-w-[44px]">
+                      <p className="text-[9px] uppercase text-abyss tracking-wider m-0">
+                        Date
+                      </p>
+                      <p className="text-sm font-medium text-accent-dark  m-0 transition-colors duration-200">
+                        TBA
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-sm font-bold cormorant text-white leading-snug mb-1">
+                        {title}
+                      </h3>
+                      <p className="text-xs text-muted text-white/60 flex items-center gap-1">
+                        <MapPin className="w-3 h-3" /> {location}
+                      </p>
+                    </div>
+                  </div>
+                  <p className="text-xs text-white/50 text-muted leading-relaxed">
+                    {description}
+                  </p>
+                </div>
+              </Card>
+            );
+          },
         )}
       </div>
     </section>

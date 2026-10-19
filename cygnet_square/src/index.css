@@ -1,5 +1,28 @@
 @import "tailwindcss";
 
+@keyframes event-detail-zoom-in {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.event-detail-zoom-in {
+  animation: event-detail-zoom-in 550ms cubic-bezier(0.2, 0.75, 0.25, 1) both;
+  transform-origin: center top;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .event-detail-zoom-in {
+    animation: none;
+  }
+}
+
 /* ============================
    Fonts
    ============================ */
