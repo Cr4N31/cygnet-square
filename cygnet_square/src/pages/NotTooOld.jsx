@@ -45,7 +45,7 @@ function DetailList({ items }) {
 
 function NotTooOld() {
   return (
-    <section className="event-detail-zoom-in min-h-screen bg-accent px-6 py-14 text-abyss sm:px-10 sm:py-20 lg:px-12">
+    <section className="event-detail-zoom-in min-h-screen bg-white px-6 py-14 text-abyss sm:px-10 sm:py-20 lg:px-12">
       <div className="mx-auto max-w-6xl">
         <Link
           to="/"
